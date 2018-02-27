@@ -37,35 +37,26 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="dropdown nav-item">
                         <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                            <i class="material-icons">apps</i> Components
+                            <i class="material-icons">apps</i> อคาเดมี่
                         </a>
                         <div class="dropdown-menu dropdown-with-icons">
-                            <a href="./index.html" class="dropdown-item">
-                                <i class="material-icons">layers</i> All Components
+                            <a href="getacademy('U-9')" class="dropdown-item">
+                                <i class="material-icons">content_paste</i> U-9
                             </a>
-                            <a href="http://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
-                                <i class="material-icons">content_paste</i> Documentation
+                            <a href="getacademy('U-11')" class="dropdown-item">
+                                <i class="material-icons">content_paste</i> U-11
+                            </a>
+                            <a href="getacademy('U-13')" class="dropdown-item">
+                                <i class="material-icons">content_paste</i> U-13
+                            </a>
+                            <a href="getacademy('U-15')" class="dropdown-item">
+                                <i class="material-icons">content_paste</i> U-15
                             </a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-                            <i class="material-icons">cloud_download</i> Download
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" data-original-title="Follow us on Twitter">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" data-original-title="Like us on Facebook">
+                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/asri.samuyae" target="_blank" data-original-title="Contact me on Facebook">
                             <i class="fa fa-facebook-square"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" data-original-title="Follow us on Instagram">
-                            <i class="fa fa-instagram"></i>
                         </a>
                     </li>
                 </ul>
@@ -91,14 +82,11 @@
                         </div>
                         <div class="mainmenu">
 <ul class="main_1">
-            <li class="l1" ng-click="index()" id="index">หน้าแรก</li>
+            <li class="l1"><a href="index.php">หน้าแรก</li>
             <li class="l1" ng-click="academy()" id="academy">อคาเดมี่</li>
-            <li class="l2"><a href="http://www.guwalaw.com/last-highlight.php">เพิ่มนักเตะ</a></li>
-            <li class="l2"><a href="http://www.guwalaw.com/cate3/พรีเมียร์ลีก"> โปรแกรมการแข่งขัน</a></li>
-            <li class="l2"><a href="http://www.guwalaw.com/tded.php">เพิ่มโปรแกรมการแข่งขัน</a></li>
-            <li class="l2"><a href="http://www.guwalaw.com/fulltable-tpl.php">ตารางคะแนน</a></li>
-            <li class="l3"><a href="http://www.guwalaw.com/livescore.php">ข่าวฟุตบอล</a></li>
-            <li class="l3"><a href="cate15/">คลิปฟุตบอล</a></li>
+            <li class="l2" ng-click="addplayer()" id="addplayer">เพิ่มนักเตะ</li>
+            <li class="l2" ng-click="fixtures()" id="fixtures"> โปรแกรมการแข่งขัน</li>
+            <li class="l2" ng-click="addfixtures()" id="addfixtures">เพิ่มโปรแกรมการแข่งขัน</li>
                             </ul>
                         </div>
                     </div>
@@ -127,19 +115,6 @@
         display: inline-block;
     }
 </style>
-  <div class="nav-submanu">
-          <ul class="nav-newlink">
-            
-            <li><img src="http://www.guwalaw.com/uploads/category/flag_english.gif" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate3/พรีเมียร์ลีก">พรีเมียร์ลีก</a></li>
-            <li><img src="http://www.guwalaw.com/uploads/category/flag_spain.gif" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate4/ลาลีกา">ลาลีกา</a></li>
-            <li><img src="http://www.guwalaw.com/uploads/category/flag_italy.gif" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate5/กัลโช่-เซเรีย">กัลโช่ เซเรีย</a></li>
-            <li><img src="http://www.guwalaw.com/uploads/category/flag_german.gif" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate6/บุนเดสลีกา">บุนเดสลีกา</a></li>
-            <li><img src="http://www.guwalaw.com/uploads/category/flag_italy.gif" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate7/ลีกเอิง">ลีกเอิง</a></li>
-            <li><img src="http://www.guwalaw.com/uploads/category/flag_thai.gif" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate8/ไทยพรีเมียร์ลีก">ไทยพรีเมียร์ลีก</a></li>
-            <li><img src="http://www.guwalaw.com/uploads/category/" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate15/ยูฟ่า-แชมเปี้ยนส์ลีก">ยูฟ่า แชมเปี้ยนส์ลีก</a></li>
-            <li><img src="http://www.guwalaw.com/uploads/category/" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate16/ยูโรป้าลีก">ยูโรป้าลีก</a></li>
-          </ul>
-        </div><!-- END NAV -->
   
   </div></div>
   </section>
@@ -185,11 +160,6 @@
             <nav class="pull-left">
                 <ul>
                     <li>
-                        <a href="https://www.creative-tim.com">
-                            Creative Tim
-                        </a>
-                    </li>
-                    <li>
                         <a href="http://presentation.creative-tim.com">
                             About Us
                         </a>
@@ -211,7 +181,7 @@
                 <script>
                     document.write(new Date().getFullYear())
                 </script>, made with <i class="material-icons">favorite</i> by
-                <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+                <a href="https://www.facebook.com/asri.samuyae" target="_blank">Mr.ASR</a>
             </div>
         </div>
     </footer>

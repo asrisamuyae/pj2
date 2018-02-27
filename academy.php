@@ -91,11 +91,11 @@
                         </div>
                         <div class="mainmenu">
 <ul class="main_1">
-            <li class="l1" ng-click="index()" id="index">หน้าแรก</li>
+            <li class="l1"><a href="index.html">หน้าแรก</li>
             <li class="l1" ng-click="academy()" id="academy">อคาเดมี่</li>
-            <li class="l2"><a href="http://www.guwalaw.com/last-highlight.php">เพิ่มนักเตะ</a></li>
-            <li class="l2"><a href="http://www.guwalaw.com/cate3/พรีเมียร์ลีก"> โปรแกรมการแข่งขัน</a></li>
-            <li class="l2"><a href="http://www.guwalaw.com/tded.php">เพิ่มโปรแกรมการแข่งขัน</a></li>
+            <li class="l2" ng-click="addplayer()" id="addplayer">เพิ่มนักเตะ</a></li>
+            <li class="l2" ng-click="fixtures()" id="fixtures"> โปรแกรมการแข่งขัน</a></li>
+            <li class="l2" ng-click="addfixtures()" id="addfixtures">เพิ่มโปรแกรมการแข่งขัน</a></li>
             <li class="l2"><a href="http://www.guwalaw.com/fulltable-tpl.php">ตารางคะแนน</a></li>
             <li class="l3"><a href="http://www.guwalaw.com/livescore.php">ข่าวฟุตบอล</a></li>
             <li class="l3"><a href="cate15/">คลิปฟุตบอล</a></li>
@@ -149,7 +149,12 @@
             <div class="" style="background: #fff">
                 <div class="row">
                    <div class="col-md-8" style="height: 800px"></div>
+
+                   
+
             <div class="col-md-4" style="background: #ddd;height: 800px" >
+
+
                 
             </div>
             </div>

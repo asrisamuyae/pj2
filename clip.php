@@ -93,9 +93,9 @@
 <ul class="main_1">
             <li class="l1" ng-click="index()" id="index">หน้าแรก</li>
             <li class="l1" ng-click="academy()" id="academy">อคาเดมี่</li>
-            <li class="l2"><a href="http://www.guwalaw.com/last-highlight.php">เพิ่มนักเตะ</a></li>
-            <li class="l2"><a href="http://www.guwalaw.com/cate3/พรีเมียร์ลีก"> โปรแกรมการแข่งขัน</a></li>
-            <li class="l2"><a href="http://www.guwalaw.com/tded.php">เพิ่มโปรแกรมการแข่งขัน</a></li>
+            <li class="l2" ng-click="addplayer()" id="addplayer">เพิ่มนักเตะ</a></li>
+            <li class="l2" ng-click="fixtures()" id="fixtures"> โปรแกรมการแข่งขัน</a></li>
+            <li class="l2" ng-click="addfixtures()" id="addfixtures">เพิ่มโปรแกรมการแข่งขัน</a></li>
             <li class="l2"><a href="http://www.guwalaw.com/fulltable-tpl.php">ตารางคะแนน</a></li>
             <li class="l3"><a href="http://www.guwalaw.com/livescore.php">ข่าวฟุตบอล</a></li>
             <li class="l3"><a href="cate15/">คลิปฟุตบอล</a></li>
@@ -225,9 +225,9 @@
     <script src="./assets/js/bootstrap-material-design.js"></script>
     <!--  Plugin for Date Time Picker and Full Calendar Plugin  -->
     <script src="./assets/js/plugins/moment.min.js"></script>
-    <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+    <!--    Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
     <script src="./assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
-    <!--	Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <!--    Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
     <!-- <script src="./assets/js/plugins/nouislider.min.js"></script> -->
     <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
     <script src="./assets/js/material-kit.js?v=2.0.2"></script>
