@@ -33,7 +33,7 @@
     <link href="http://9lookjeab.com/assets/assets-for-demo/demo.css" rel="stylesheet" />
 
 </head>
-<body>
+<body  ng-app="myApp" ng-controller="myCtrl">
 <section class="wrapper">
 <!-- Start Header section -->
 <header class="header-side navbar-fixed-top" style="top: 0px;">
@@ -47,6 +47,15 @@
                     </ul>
                 </div>
                 <div class="col-sm-6 text-right">
+                    <div style="display: inline-block;
+    float: right;
+    padding: 4px;
+    margin-left: 8px;
+    background: #1eb848;
+    border-radius: 25px;
+    font-size: 15px;
+    width: 60px;
+    text-align: center;" onclick="login()">Login</div>
                     <form class="form-inline" method="get" action="http://9lookjeab.com/search" style="margin: auto;">
                         <section class="search-section">
                             <button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
@@ -123,6 +132,11 @@
         $('#hilight').hide()
         $('#hilight').show()
 </script>
+<style>
+    .search-section .btn-search{
+        left: 100px !important
+    }
+</style>
 <main>
     <div class="container">
                 <div class="row">
@@ -130,7 +144,7 @@
                 <div class="white-box" style="margin-bottom:10px;">
                     <div class="row">
                         <div class="col-sm-7">
-                                                        <article class="big-news" style="background-image: url('./assets/img/wallpaper-poster.jpg')">
+                            <article class="big-news" style="background-image: url('./assets/img/wallpaper-poster.jpg')">
                                 <div class="overlay">
                                     <div class="plain-text">
                                         <a href="http://9lookjeab.com/home" class="underline-none"><h1>Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันใน...</h1></a>
@@ -144,8 +158,8 @@
                                 <header>
                                     <h4>Latest news</h4></header>
                                 <article>
-                                    <ul class="news-list">
-                                                                                    <li>
+                                    <ul class="news-list">                         
+                                        <li>
                                                 <div class="news-item">
                                                     <a href="http://9lookjeab.com/news/view/22" class="name">Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์</a>
                                                     <ul class="tools">
@@ -405,6 +419,9 @@
 
 <script src="http://9lookjeab.com/assets/javascripts/main.js"></script>
 <!-- <script src="./assets/js/main.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-cookies.js"></script> 
+    <script src="./assets/js/core/main_angular.js"></script>
 
 
 </section></body></html>
