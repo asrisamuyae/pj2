@@ -55,7 +55,7 @@
     border-radius: 25px;
     font-size: 15px;
     width: 60px;
-    text-align: center;" onclick="login()">Login</div>
+    text-align: center;" ng-click="login()">Login</div>
                     <form class="form-inline" method="get" action="http://9lookjeab.com/search" style="margin: auto;">
                         <section class="search-section">
                             <button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
@@ -108,7 +108,7 @@
                             </li>
                         </ul>
                     </li>
-                        <li><a onclick="menu()" >เพิ่มนักเตะ</a></li>
+                        <li><a ng-click="menu()" >เพิ่มนักเตะ</a></li>
                         <li><a href="http://9lookjeab.com/hilight-full">โปรแกรมการแข่งขัน</a></li>
                         <li><a href="http://9lookjeab.com/table-score">เพิ่มโปรแกรมการแข่งขัน</a></li>
                     </ul>
@@ -363,6 +363,51 @@
                     </div>
                 </div>
                     </div>
+                    </section>
+                    <section id="coach" style="display: none">
+                       <div class="card">
+                                <div class="card-header" data-background-color="blue">
+                                    <h4 class="title">Academy <span ng-bind="class"></span></h4>
+                                    <!-- <p class="category">Here is a subtitle for this table</p> -->
+                                </div>
+                                <div class="card-content table-responsive">
+                                    <table class="table">
+                                        <thead class="text-primary">
+                                            <tr>
+                                                <th>Player Name</th>
+                                                <th>Birthday</th>
+                                                <th>Position</th>
+                                                <th>School</th>
+                                                <th>Height</th>
+                                                <th>Weight</th>
+                                                <th>Foot</th>
+                                                <th>Address</th>
+                                                <th>Phone</th>
+                                                <th>Sign Date</th>
+                                                <th>Release Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                            <tr ng-repeat="item in academyclass">
+                                                <td><span ng-bind="item.name"></span></td>
+                                                <td><span ng-bind="item.birthday"></span></td>
+                                                <td><span ng-bind="item.position"></span></td>
+                                                <td><span ng-bind="item.school"></span></td>
+                                                <td><span ng-bind="item.height"></span></td>
+                                                <td><span ng-bind="item.weight"></span></td>
+                                                <td><span ng-bind="item.foot"></span></td>
+                                                <td><span ng-bind="item.address"></span></td>
+                                                <td><span ng-bind="item.phone"></span></td>
+                                                <td><span ng-bind="item.sign_date"></span></td>
+                                                <td><span ng-bind="item.release_date"></span></td>
+                                                
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                     </section>
             </div>
     <section class="stadium-section white-box" style="background-image: url('assets/img/wallpaper-poster.jpg')">

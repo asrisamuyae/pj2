@@ -1,9 +1,9 @@
 var app = angular.module('myApp', ['ngCookies']);
-app.controller('myCtrl', function($scope,$http,$location,$window,$cookies, $cookieStore) {
+app.controller('myCtrl', function($scope,$http,$location,$window,) {
 	$scope.test = "TEST";
 	console.log('workk')
 	//alert('aaaaa')
-	console.log($cookies.get("login"))
+	// console.log($cookies.get("login"))
 	$scope.login = function(){
 		alert('asasa')
 		 if ($cookies.get("login") == undefined) {
@@ -69,6 +69,29 @@ app.controller('myCtrl', function($scope,$http,$location,$window,$cookies, $cook
 	 //                        console.log(error);
 	 //        });
 	    
+	}
+	$scope.menu = function (){
+		alert("aaaa")
+		$('#coach').show()
+		$('#hilight').hide()
+		$http({
+	                        method : 'POST',
+	                        url : 'php/getplayer.php',
+	                        //data: $.param({name: 1}),
+	                        headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
+	                }).success(function(res){
+	                        console.log(res);
+	                        $scope.academyclass = res;
+	                        for (var i=0;i<= $scope.detaplayer.length; i++) {
+	                        	// console.log($scope.detaplayer[i].name)
+	                    }
+	                        
+
+
+
+
+	               });
+
 	}
 	$scope.coach = function (){
 		// alert("aaaa")
