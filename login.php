@@ -194,7 +194,7 @@
     padding: 10px;
 }
 </style>
-<section style="height: 70vh;    background: #fff;">
+<section style="height: 80vh;    background: #fff;">
     <div class="container">
         <div class="row">
             <div style="margin-top: 75px;">
@@ -262,7 +262,7 @@
     
 
 <!-- End Main/Content section --><!-- Start Footer section -->
-<footer class="footer-side">
+<!-- <footer class="footer-side">
     <section class="footer-bottom">
         <div class="container">
             <div class="row">
@@ -273,7 +273,7 @@
             </div>
         </div>
     </section>
-</footer>
+</footer> -->
 <script src="./assets/js/jquery-1.10.2.min.js"></script>
 <!-- <script src="http://9lookjeab.com/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script> -->
 
