@@ -1,11 +1,11 @@
 var app = angular.module('myApp', ['ngCookies']);
-app.controller('myCtrl', function($scope,$http,$location,$window,) {
+app.controller('myCtrl', function($scope,$http,$location,$window,$cookies,$cookieStore) {
 	$scope.test = "TEST";
 	console.log('workk')
 	//alert('aaaaa')
-	// console.log($cookies.get("login"))
+	console.log($cookies.get("login"))
 	$scope.login = function(){
-		alert('asasa')
+		//alert('asasa')
 		 if ($cookies.get("login") == undefined) {
             $window.location.href="login.php";
         }

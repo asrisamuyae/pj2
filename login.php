@@ -76,7 +76,10 @@
                         </div>
                     </div>
                     <figure class="logo-section">
-                        <h1><a href="./"><img src="./assets/img/logo.png" width="160"></a></h1></figure>
+                        <h1>
+                            <!-- <a href="./"><img src="./assets/img/logo.png" width="160"></a> -->
+                        </h1>
+                        </figure>
                     <a href="http://9lookjeab.com/hilight-goal" class="icon-bag visible-xs"><i class="fa fa-play" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-sm-9 text-right">
@@ -124,34 +127,140 @@
 }
 .dropdown_menu li{
     display: block !important;
-    </style>
+    cursor: pointer;
 }
+    </style>
+
 </header><!-- Start Main/Content section -->
-<script >
-    function menu() {
-        $('#hilight').hide()
-        $('#hilight').show()
-</script>
+
 <style>
     .search-section .btn-search{
         left: 100px !important
     }
+    .input-group .input-group-addon {
+    border: 0;
+    background: transparent;
+    padding: 6px 15px 0px;
+}
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.input-group-addon, .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.form-control, .form-group .form-control {
+    border: 0;
+    background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+    background-size: 0 2px, 100% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom, center calc(100% - 1px);
+    background-color: rgba(0, 0, 0, 0);
+    transition: background 0s ease-out;
+    float: none;
+    box-shadow: none;
+    border-radius: 0;
+    font-weight: 400;
+}
+.form-group.label-static label.control-label, .form-group.label-placeholder label.control-label, .form-group.label-floating label.control-label {
+    position: absolute;
+    pointer-events: none;
+    transition: 0.3s ease all;
+}
+.form-group label.control-label {
+    font-size: 11px;
+    line-height: 1.0714285718;
+    color: #AAAAAA;
+    font-weight: 400;
+    margin: 16px 0 0 0;
+}
+.form-group .checkbox label, .form-group .radio label, .form-group label, .form-group .label-on-left, .form-group .label-on-right {
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #AAAAAA;
+    font-weight: 400;
+}
+.header-side .second-header {
+    background-color: #1eb848;
+    padding: 10px;
+}
 </style>
-<main>
+<section style="height: 70vh;    background: #fff;">
     <div class="container">
         <div class="row">
-            <input type="" name="" ng-model="email">
-            <input type="" name="" ng-model="password">
+            <div style="margin-top: 75px;">
+            <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+                            <form method="#" action="#">
+                                <div class="card card-login">
+                                    <div class="card-header text-center" data-background-color="rose">
+                                        <h4 class="card-title">Login</h4>
+                                        <div class="social-line">
+                                            <a href="#btn" class="btn btn-just-icon btn-simple">
+                                                <i class="fa fa-facebook-square"></i>
+                                            </a>
+                                            
+                                            <a href="#eugen" class="btn btn-just-icon btn-simple">
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                  
+                                    <div class="card-content">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">face</i>
+                                            </span>
+                                            <div class="form-group label-floating is-empty">
+                                                <label class="control-label">First Name</label>
+                                                <input type="text" class="form-control">
+                                            <span class="material-input"></span></div>
+                                        </div>
+                                        <!-- <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">email</i>
+                                            </span>
+                                            <div class="form-group label-floating is-empty">
+                                                <label class="control-label">Email address</label>
+                                                <input type="email" class="form-control">
+                                            <span class="material-input"></span></div>
+                                        </div> -->
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">lock_outline</i>
+                                            </span>
+                                            <div class="form-group label-floating is-empty">
+                                                <label class="control-label">Password</label>
+                                                <input type="password" class="form-control">
+                                            <span class="material-input"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="footer text-center">
+                                        <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg">LOGIN</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
             <!-- <input type="" name="" ng-model="email"> -->
            
         </div>
-                </div>
+    </div>
+    </section>
     
    
     
   
     
-</main>
+
 <!-- End Main/Content section --><!-- Start Footer section -->
 <footer class="footer-side">
     <section class="footer-bottom">
@@ -165,7 +274,7 @@
         </div>
     </section>
 </footer>
-<script src="https://www.welovetaxi.com/app/booking2/files/js/jquery.min.js"></script>
+<script src="./assets/js/jquery-1.10.2.min.js"></script>
 <!-- <script src="http://9lookjeab.com/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script> -->
 
 <script src="http://9lookjeab.com/assets/javascripts/libs/bootstrap.min.js"></script>
@@ -181,11 +290,10 @@
 <script src="http://9lookjeab.com/assets/javascripts/libs/ug-theme-tilesgrid.js"></script>
 
 <script src="http://9lookjeab.com/assets/javascripts/main.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookie/4.1.0/angular-cookie.js"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-cookie/4.1.0/angular-cookie.min.js"></script>
-    <script src="./assets/js/core/main_angular.js"></script>
+<script src="./assets/js/angular/angular.min.js"></script>
+    <script src="./assets/js/angular/angular-cookies.min.js"></script> 
+    <!-- <script src="./assets/js/core/main_angular.js"></script> -->
+    <!-- <script src="./assets/js/core/main_angular.js"></script> -->
  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 <!-- <script src="./assets/js/main.js"></script> -->
 
@@ -195,9 +303,9 @@
     var app = angular.module("myApp", ['ngCookies']);
 
 app.controller("login",  function($scope,$location,$http,$window,$cookies) {
-        if ($cookies.get("login") == undefined) {
-            $window.location.href="login.php";
-        }
+        // if ($cookies.get("login") == undefined) {
+        //     $window.location.href="login.php";
+        // }
         $http({
                 method : 'POST',
                 url : "php/getUsers.php",

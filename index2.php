@@ -447,7 +447,7 @@
         </div>
     </section>
 </footer>
-<script src="https://www.welovetaxi.com/app/booking2/files/js/jquery.min.js"></script>
+<script src="./assets/js/jquery-1.10.2.min.js"></script>
 <!-- <script src="http://9lookjeab.com/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script> -->
 
 <script src="http://9lookjeab.com/assets/javascripts/libs/bootstrap.min.js"></script>
@@ -464,8 +464,8 @@
 
 <script src="http://9lookjeab.com/assets/javascripts/main.js"></script>
 <!-- <script src="./assets/js/main.js"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-cookies.js"></script> 
+<script src="./assets/js/angular/angular.min.js"></script>
+    <script src="./assets/js/angular/angular-cookies.min.js"></script> 
     <script src="./assets/js/core/main_angular.js"></script>
 
 
