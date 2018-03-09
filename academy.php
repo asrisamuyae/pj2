@@ -203,7 +203,7 @@
                     <section id="coach" style="display: none2">
                        <div class="card">
                                 <div class="card-header" data-background-color="blue">
-                                    <h4 class="title">Add Player<span ng-bind="class"></span></h4>
+                                    <h4 class="title">Academy<span ng-bind="class"></span></h4>
                                     <!-- <p class="category">Here is a subtitle for this table</p> -->
                                 </div>
                                 <div class="card-content table-responsive">
