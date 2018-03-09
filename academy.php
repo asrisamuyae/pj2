@@ -1,256 +1,521 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="">
-    <link rel="icon" href="">
-    <title>
-       Coach Gadgets
-    </title>
-    <!--     Fonts and icons     -->
+    <meta charset="UTF-8">
+    <title> Coach Gadgets </title>
+    <!-- <base href="https://9lookjeab.com"> -->
+    <meta name="description" content="  ">
+    <meta name="keywords" content="  ">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="_token" content="K4K8YVEsJPl4AQp3Kas0gI3WCSSIFSCvBtTQY9I5">
+    <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/vendor/bootstrap.min.css">
+
+        <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/vendor/flickity.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/vendor/ion.rangeSlider.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/vendor/ion.rangeSlider.skinNice.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/vendor/time.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/vendor/unite-gallery.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/vendor/font-awesome.min.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/main.css">
+
+        <script src="http://9lookjeab.com/assets/javascripts/libs/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./assets/css/material-kit.css?v=2.0.2">
+    <link rel="stylesheet" href="http://9lookjeab.com/assets/css/material-kit.css?v=2.0.2">
     <!-- Documentation extras -->
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="./assets/assets-for-demo/demo.css" rel="stylesheet" />
-    <!-- iframe removal -->
-</head>
+    <link href="http://9lookjeab.com/assets/assets-for-demo/demo.css" rel="stylesheet" />
 
-<body class="index-page " ng-app="myApp" ng-controller="myCtrl">
-    <nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav" style="padding-top: 0;
-    background: #4caf50 !important;">
+</head>
+<body  ng-app="myApp" ng-controller="myCtrl">
+<section class="wrapper">
+<!-- Start Header section -->
+<header class="header-side navbar-fixed-top" style="top: 0px;">
+    <section class="top-header hidden-xs">
         <div class="container">
-            <div class="navbar-translate">
-                <a class="navbar-brand" href="./index.html">Username </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    <span class="navbar-toggler-icon"></span>
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="dropdown nav-item">
-                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                            <i class="material-icons">apps</i> Components
-                        </a>
-                        <div class="dropdown-menu dropdown-with-icons">
-                            <a href="./index.html" class="dropdown-item">
-                                <i class="material-icons">layers</i> All Components
-                            </a>
-                            <a href="http://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
-                                <i class="material-icons">content_paste</i> Documentation
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-                            <i class="material-icons">cloud_download</i> Download
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" data-original-title="Follow us on Twitter">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" data-original-title="Like us on Facebook">
-                            <i class="fa fa-facebook-square"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" data-original-title="Follow us on Instagram">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
+            <div class="row">
+                <div class="col-sm-6"><label>Follow Me</label>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/asri.samuyae/">
+                            <i class="fa fa-facebook-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <div style="display: inline-block;
+    float: right;
+    padding: 4px;
+    margin-left: 8px;
+    background: #1eb848;
+    border-radius: 25px;
+    font-size: 15px;
+    width: 60px;
+    text-align: center;" ng-click="login()" ng-style="btn_login_no" id="btn_login_no">Login</div>
+    <div style="display: inline-block;
+    float: right;
+    padding: 4px;
+    margin-left: 8px;
+    background: #1eb848;
+    border-radius: 25px;
+    font-size: 15px;
+    width: 60px;
+    text-align: center;" ng-click="logout()" ng-style="btn_login_yes" id="btn_login_no">logout</div>
+    <div style="display: inline-block;
+    float: right;
+    padding: 4px;
+    margin-left: 8px;
+    /*background: #1eb848;*/
+    /*border-radius: 25px;*/
+    font-size: 15px;
+   /* width: 60px;*/
+    text-align: center;" ng-style="btn_login_yes" ng-bind="getUser" id="btn_login_yes"></div>
+    
+                    <form class="form-inline" method="get" action="http://9lookjeab.com/search" style="margin: auto;">
+                        <section class="search-section">
+                            <button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
+                            <input class="form-control round-input" type="text" placeholder="ค้นหา" name="q"></section>
+                    </form>
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="section section-tabs" style="padding: 50px 0;">
-            <div class="container">
-              <h1>COACH GADGETS</h1> 
-               
-    </div>
-</div>
-<section class="main_manu">
-            <div class="container main_manu">
-                <div class="row">
-<div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div class="mainmenu">
-<ul class="main_1">
-            <li class="l1"><a href="index.html">หน้าแรก</li>
-            <li class="l1" ng-click="academy()" id="academy">อคาเดมี่</li>
-            <li class="l2" ng-click="addplayer()" id="addplayer">เพิ่มนักเตะ</a></li>
-            <li class="l2" ng-click="fixtures()" id="fixtures"> โปรแกรมการแข่งขัน</a></li>
-            <li class="l2" ng-click="addfixtures()" id="addfixtures">เพิ่มโปรแกรมการแข่งขัน</a></li>
-            <li class="l2"><a href="http://www.guwalaw.com/fulltable-tpl.php">ตารางคะแนน</a></li>
-            <li class="l3"><a href="http://www.guwalaw.com/livescore.php">ข่าวฟุตบอล</a></li>
-            <li class="l3"><a href="cate15/">คลิปฟุตบอล</a></li>
-                            </ul>
+    </section>
+    <section class="second-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="burger-container">
+                        <div id="burger">
+                            <div class="bar topBar"></div>
+                            <div class="bar btmBar"></div>
                         </div>
                     </div>
+                    <figure class="logo-section">
+                        <h1><a href="index2.php"><img src="./assets/img/CG logo.png" width="200"></a></h1></figure>
+                    <a href="http://9lookjeab.com/hilight-goal" class="icon-bag visible-xs"><i class="fa fa-play" aria-hidden="true"></i></a>
                 </div>
-        </section>
-        <section class="sub_manu" style="    background: #4D3768;
-    padding-top: 1px;
-    padding-bottom: 5px;">
-  <div class="container subbg"><div class="row">
-<!-- START NAV -->
-<style>
-.nav-newlink{
-    margin: auto;
+                <div class="col-sm-9 text-right">
+                    <ul class="navbar">
+                        <li ><a href="index2.php">หน้าหลัก</a></li>
+                        <li class="active" class="dropdown nav-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                             อคาเดมี่
+                        </a>
+                        <ul class="dropdown-menu dropdown-with-icons dropdown_menu">
+                            <li  ng-click="academy('U-9')">
+                                <!-- <i class="material-icons">content_paste</i> -->
+                                <span style="color: #333">U-9</span> 
+                            </li>
+                            <li  ng-click="academy('U-11')">
+                                 
+                                <!-- <i class="material-icons">content_paste</i> -->
+                                <span style="color: #333">U-11</span>
+                            </li>
+                            <li ng-click="academy('U-13')" >
+                                <!-- <i class="material-icons">content_paste</i>  -->
+                                <span style="color: #333">U-13</span>
+
+                            </li>
+                            <li ng-click="academy('U-15')">
+                                <!-- <i class="material-icons">content_paste</i> -->
+                                <span style="color: #333">U-15</span>
+
+                            </li>
+                        </ul>
+                    </li>
+                        <li ><a ng-click="addplayer()" id="addplayer">เพิ่มนักเตะ</a></li>
+                        <li><a ng-click="menu()" >โปรแกรมการแข่งขัน</a></li>
+                        <li><a ng-click="menu()" >เพิ่มโปรแกรมการแข่งขัน</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .dropdown_menu li:hover{
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
+    background-color: #9c27b0;
+    color: #FFF !important;
 }
-    .nav-newlink li{
-        padding: 15px;
-            cursor: pointer;
-        display: inline-block;
+.dropdown_menu {
+    padding: 0px;
+}
+.dropdown_menu li{
+    display: block !important;
+    margin-left: 0;
+    padding: 8px 29px;
+    border-bottom: 1px solid #1eb848;
+}
+.navbar li{
+
+   cursor: pointer;
+}
+ </style>
+</header><!-- Start Main/Content section -->
+<script >
+    function menu() {
+        $('#hilight').hide()
+        $('#hilight').show()
     }
-    .main_1{
-        margin: auto;
-    }
-    .main_1 li{
-            padding: 15px;
-                cursor: pointer;
-        display: inline-block;
+</script>
+<style>
+    .search-section .btn-search{
+        left: 100px !important
     }
 </style>
-  <div class="nav-submanu">
-          <ul class="nav-newlink">
-            
-            <li><img src="http://www.guwalaw.com/uploads/category/flag_english.gif" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate3/พรีเมียร์ลีก">พรีเมียร์ลีก</a></li>
-            <li><img src="http://www.guwalaw.com/uploads/category/flag_spain.gif" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate4/ลาลีกา">ลาลีกา</a></li>
-            <li><img src="http://www.guwalaw.com/uploads/category/flag_italy.gif" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate5/กัลโช่-เซเรีย">กัลโช่ เซเรีย</a></li>
-            <li><img src="http://www.guwalaw.com/uploads/category/flag_german.gif" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate6/บุนเดสลีกา">บุนเดสลีกา</a></li>
-            <li><img src="http://www.guwalaw.com/uploads/category/flag_italy.gif" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate7/ลีกเอิง">ลีกเอิง</a></li>
-            <li><img src="http://www.guwalaw.com/uploads/category/flag_thai.gif" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate8/ไทยพรีเมียร์ลีก">ไทยพรีเมียร์ลีก</a></li>
-            <li><img src="http://www.guwalaw.com/uploads/category/" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate15/ยูฟ่า-แชมเปี้ยนส์ลีก">ยูฟ่า แชมเปี้ยนส์ลีก</a></li>
-            <li><img src="http://www.guwalaw.com/uploads/category/" width="14" height="12" border="0"> <a href="http://www.guwalaw.com/cate16/ยูโรป้าลีก">ยูโรป้าลีก</a></li>
-          </ul>
-        </div><!-- END NAV -->
-  
-  </div></div>
-  </section>
-<section>
-    <div class="row">
-        <div class="container">
-            <div class="" style="background: #fff">
+<main>
+         <section class="stadium-section white-box" style="background-image: url('assets/img/euro wallpaper.jpg');height: 30vh;">
+        <div class="overlay">
+            <div class="container">
                 <div class="row">
-                   <div class="col-md-8" style="height: 800px"></div>
-
-                   
-
-            <div class="col-md-4" style="background: #ddd;height: 800px" >
-
-
-                
-            </div>
-            </div>
-        </div>
-         
-        </div>
-    </div>
-</section>
-    <!-- Classic Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="material-icons">clear</i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-link">Nice Button</button>
-                    <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Close</button>
+                    <div class="col-sm-12">
+                        <section class="inner-box inverse" style="text-align: center;">
+                           
+                                <div style="    font-weight: 600 !important;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;">ACADEMY</div>
+                           <!--  <article>
+                                <h1 class="text-center">ไฮไลท์ ฟุตบอล</h1>
+                                <p class="text-center"><b>จัดเต็มทุกคู่ ทุกนัด ไม่มีพลาด</b></p>
+                            </article> -->
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--  End Modal -->
-    <footer class="footer ">
+    </section>
+    <style>
+        body main .stadium-section {
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+     min-height: 30vh; 
+}
+    </style>
+    <div class="container news-page" style="padding-top: 0;padding-bottom: 10px;">
+        
+                    <section id="coach" style="display: none2">
+                       <div class="card">
+                                <div class="card-header" data-background-color="blue">
+                                    <h4 class="title">Add Player<span ng-bind="class"></span></h4>
+                                    <!-- <p class="category">Here is a subtitle for this table</p> -->
+                                </div>
+                                <div class="card-content table-responsive">
+                                    <table class="table">
+                                        <thead class="text-primary">
+                                            <tr>
+                                                <th>Player Name</th>
+                                                <th>Birthday</th>
+                                                <th>Position</th>
+                                                <th>School</th>
+                                                <th>Height</th>
+                                                <th>Weight</th>
+                                                <th>Foot</th>
+                                                <th>Address</th>
+                                                <th>Phone</th>
+                                                <th>Sign Date</th>
+                                                <th>Release Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                            <tr ng-repeat="item in academydata">
+                                                <td><span ng-bind="item.name"></span></td>
+                                                <td><span ng-bind="item.birthday"></span></td>
+                                                <td><span ng-bind="item.position"></span></td>
+                                                <td><span ng-bind="item.school"></span></td>
+                                                <td><span ng-bind="item.height"></span></td>
+                                                <td><span ng-bind="item.weight"></span></td>
+                                                <td><span ng-bind="item.foot"></span></td>
+                                                <td><span ng-bind="item.address"></span></td>
+                                                <td><span ng-bind="item.phone"></span></td>
+                                                <td><span ng-bind="item.sign_date"></span></td>
+                                                <td><span ng-bind="item.release_date"></span></td>
+                                                
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                    </section>
+
+
+   
+    
+  
+    
+</main>
+<!-- End Main/Content section --><!-- Start Footer section -->
+<footer class="footer-side">
+    <section class="footer-bottom">
         <div class="container">
-            <nav class="pull-left">
-                <ul>
-                    <li>
-                        <a href="https://www.creative-tim.com">
-                            Creative Tim
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://presentation.creative-tim.com">
-                            About Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://blog.creative-tim.com">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.creative-tim.com/license">
-                            Licenses
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="copyright pull-right">
-                &copy;
-                <script>
-                    document.write(new Date().getFullYear())
-                </script>, made with <i class="material-icons">favorite</i> by
-                <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+            <div class="row">
+                <div class="col-sm-12" style="padding-top: 30px;padding-bottom: 30px">
+                    Copyright © 2018
+                    <a href="https://9lookjeab.com">Football</a>, All rights reserved
+                </div>
             </div>
         </div>
-    </footer>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
-    <!-- angular -->
+    </section>
+</footer>
+<script src="./assets/js/jquery-1.10.2.min.js"></script>
+<!-- <script src="http://9lookjeab.com/assets/plugins/jQuery/jQuery-2.1.4.min.js"></script> -->
 
-    <!--   Core JS Files   -->
-    <script src="./assets/js/core/jquery.min.js"></script>
-    <script src="./assets/js/core/popper.min.js"></script>
-    <script src="./assets/js/bootstrap-material-design.js"></script>
-    <!--  Plugin for Date Time Picker and Full Calendar Plugin  -->
-    <script src="./assets/js/plugins/moment.min.js"></script>
-    <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-    <script src="./assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
-    <!--	Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-    <!-- <script src="./assets/js/plugins/nouislider.min.js"></script> -->
-    <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
-    <script src="./assets/js/material-kit.js?v=2.0.2"></script>
-    <!-- Fixed Sidebar Nav - js With initialisations For Demo Purpose, Don't Include it in your project -->
-    <script src="./assets/assets-for-demo/js/material-kit-demo.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-cookies.js"></script> 
-    <script src="./assets/js/core/main_angular.js"></script>
-   <!--  <script>
-        $(document).ready(function() {
+<script src="http://9lookjeab.com/assets/javascripts/libs/bootstrap.min.js"></script>
 
-            //init DateTimePickers
-            materialKit.initFormExtendedDatetimepickers();
+<script src="http://9lookjeab.com/assets/javascripts/libs/flickity.pkgd.min.js"></script>
 
-            // Sliders Init
-            materialKit.initSliders();
-        });
-    </script> -->
-</body>
+<script src="http://9lookjeab.com/assets/javascripts/libs/ion.rangeSlider.min.js"></script>
 
-</html>
+<script src="http://9lookjeab.com/assets/javascripts/libs/unitegallery.min.js"></script>
+
+<script src="http://9lookjeab.com/assets/javascripts/libs/ug-theme-tiles.js"></script>
+
+<script src="http://9lookjeab.com/assets/javascripts/libs/ug-theme-tilesgrid.js"></script>
+
+<script src="http://9lookjeab.com/assets/javascripts/main.js"></script>
+<!-- <script src="./assets/js/main.js"></script> -->
+<script src="./assets/js/angular/angular.min.js"></script>
+    <script src="./assets/js/angular/angular-cookies.min.js"></script> 
+    <!-- <script src="./assets/js/core/main_angular.js"></script> -->
+
+
+</section>
+<script>
+    var app = angular.module('myApp', ['ngCookies']);
+app.controller('myCtrl', function($scope,$http,$location,$window ,$filter,$cookies,$cookieStore) {
+
+    $scope.test = "TEST";
+    $scope.addgoal = false;
+    //alert('aaaaa')
+    
+     redyfucntion();
+    console.log($cookies.get("login"))
+    function redyfucntion(){
+        $scope.err = $location.search().err;
+        $scope.data = $location.search().data;
+            console.log($scope.data)
+        //alert('asasa')
+         if ($cookies.get("login") == undefined) {
+             $scope.btn_login_yes = {
+                        "display" : " none",
+                        
+                      }
+                       $scope.btn_login_no = {
+                        "display" : "inline-block",
+                        
+                      }
+        }
+        $http({
+                method : 'POST',
+                url : "php/gitCoachbyid.php",
+                data: $.param({'id': $cookies.get("login")}),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                }).success(function(res){
+                 console.log(res)
+                 console.log(res[0].username)
+                 if (res != 0) {
+                     
+                   $scope.btn_login_yes = {
+                        "display" : " inline-block",
+                        
+                      }
+                       $scope.btn_login_no = {
+                        "display" : "none",
+                        
+                      }
+                      $scope.getUser = res[0].email;
+                      console.log($scope.getUser)
+                }
+                 else{
+                    //$window.location.href = 'index.php';
+                 }
+                 // if (res[0].username =='admin') {
+                 //     $cookies.put("users", res[0].username); 
+                 // }
+                    var value = $cookies.get("login");
+                    console.log(value)
+                       
+                       
+            });
+                 $http({
+                            method : 'POST',
+                            url : 'php/getacademy.php',
+                            data: $.param({ 'team_class': $scope.data}),
+                            headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
+                    }).success(function(res){
+                            console.log(res);
+                            $scope.academydata = res;
+                            
+
+
+
+
+                    }).error(function(error){
+                            console.log(error);
+            });
+                    $http({
+                            method : 'POST',
+                            url : 'php/getplayer.php',
+                            //data: $.param({name: 1}),
+                            headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
+                    }).success(function(res){
+                            console.log(res);
+                            $scope.detaplayer = res;
+                           
+                            
+
+
+
+
+                   });
+        console.log($cookies.get("login"))
+        
+        
+    }
+    $scope.academy = function (x){
+         $http({
+                            method : 'POST',
+                            url : 'php/getacademy.php',
+                            data: $.param({ 'team_class':x,'owner':$cookies.get("login")}),
+                            headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
+                    }).success(function(res){
+                            console.log(res);
+                            $scope.academydata = res;
+                            
+
+
+
+
+                    }).error(function(error){
+                            console.log(error);
+            });
+              $window.location.href = 'academy.php#?data='+x;
+        
+    }
+    $scope.login = function (){
+        if ($cookies.get("login") == undefined) {
+              $window.location.href = 'login.php';
+        }
+    }
+    $scope.logout = function (){
+        $cookies.remove("login");
+             $window.location.href = 'login.php';
+
+    }
+    $scope.addplayer = function (){
+        //alert("aaaa")
+        $window.location.href = 'addplayer.php';
+    }
+    $scope.academyclass = [];
+    $scope.checkx = '';
+    $scope.changeincre = function(item){
+        console.log(item)
+        console.log(item.id)
+        // $('#showinput'+item.id).css("display", "inline-block");
+        // $('#showsave'+item.id).css("display", "inline-block");
+
+        // $('#showedit'+item.id).css("display", "none");
+        $scope.goalid = item.id;
+        if ($scope.checkx == '' ) {
+            console.log('in case null')
+            
+
+            $('#showinput'+item.id).css("display", "block");
+            $('#showsave'+item.id).css("display", "block");
+            $('#showedit'+item.id).css("display", "none");
+            $scope.checkx = item.id;
+        }
+        else if (item.id != $scope.checkx) {
+            console.log('in case x==checkx')            
+            $('#showinput'+$scope.checkx).css("display", "none");
+            $('#showsave'+$scope.checkx).css("display", "none");
+            $('#showedit'+$scope.checkx).css("display", "block");
+
+            $('#showinput'+item.id).css("display", "block");
+            $('#showsave'+item.id).css("display", "block");
+            $('#showedit'+item.id).css("display", "none");
+            $scope.checkx = item.id;
+        }
+        else{
+            $('#showinput'+item.id).css("display", "block");
+            $('#showsave'+item.id).css("display", "block");
+            $('#showedit'+item.id).css("display", "none");
+            $scope.checkx = item.id;
+        }
+        //$scope.addgoal+ = true;
+    }
+
+    $scope.saveaddgoal = function(x){
+
+        $('#showinput'+x).css("display", "none");
+        $scope.inputgoal = $('#showinput'+x).val();
+
+        $('#showsave'+x).css("display", "none");
+
+        $('#showedit'+x).css("display", "block");
+
+        //$scope.addgoal = false;
+        console.log(x)
+        console.log($scope.inputgoal)
+
+        $http({
+                            method : 'POST',
+                            url : 'php/updateGoal.php',
+                            data: $.param({ 'id': x
+                                ,'goal': $scope.inputgoal
+                            }),
+                            headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
+                    }).success(function(res){
+                            console.log(res);
+                             angular.forEach($scope.academyclass, function(data){
+                                    if (data.id == x) {
+                                        data.goal = $scope.inputgoal;
+                                        $scope.inputgoal = '';
+                                    }
+                                });
+                            //$window.location.reload();
+
+                     });
+    }
+    $scope.getacademy = function(x){
+        $scope.academyclass = [];
+        console.log(x);
+        $scope.class = x;
+        console.log($scope.academydata);
+        for (var i = 0; i < $scope.academydata.length; i++) {
+            //console.log($scope.academydata[i]);
+            console.log($scope.academydata[i].team_class);
+            if(x == $scope.academydata[i].team_class){
+                //console.log($scope.academydata)
+                
+                $scope.academyclass.push($scope.academydata[i]);
+                $('#academy').modal('show');
+            }
+            if(x == 'All'){
+                //alert('aaaaa');
+                $scope.academyclass.push($scope.academydata[i]);
+                $('#academy').modal('show');
+            }
+        }
+        // console.log('======================================================');
+        
+         // angular.forEach($scope.academyclass, function(data, i){
+   //           console.log(data)
+   //       });
+
+    }
+    
+   
+    
+});
+      
+</script>
+</body></html>

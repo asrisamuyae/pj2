@@ -1,7 +1,7 @@
 <?
 include("../config.php");
 	// $class = $_POST[classs];
-	$sql = 'select * from player ORDER BY player_name ASC';
+	$sql = 'select * from player  WHERE team_class = "'.$_POST[team_class].'" ';
 	// $sql = 'select * from player where team_class = "'.$class.'"';
 	$Objquery = mysql_query($sql,$conndb);
 	//echo $Objquery;

@@ -55,7 +55,26 @@
     border-radius: 25px;
     font-size: 15px;
     width: 60px;
-    text-align: center;" ng-click="login()">Login</div>
+    text-align: center;" ng-click="login()" ng-style="btn_login_no" id="btn_login_no">Login</div>
+    <div style="display: inline-block;
+    float: right;
+    padding: 4px;
+    margin-left: 8px;
+    background: #1eb848;
+    border-radius: 25px;
+    font-size: 15px;
+    width: 60px;
+    text-align: center;" ng-click="logout()" ng-style="btn_login_yes" id="btn_login_no">logout</div>
+    <div style="display: inline-block;
+    float: right;
+    padding: 4px;
+    margin-left: 8px;
+    /*background: #1eb848;*/
+    /*border-radius: 25px;*/
+    font-size: 15px;
+   /* width: 60px;*/
+    text-align: center;" ng-style="btn_login_yes" ng-bind="getUser" id="btn_login_yes"></div>
+    
                     <form class="form-inline" method="get" action="http://9lookjeab.com/search" style="margin: auto;">
                         <section class="search-section">
                             <button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
@@ -76,41 +95,41 @@
                         </div>
                     </div>
                     <figure class="logo-section">
-                        <h1><a href="./"><img src="./assets/img/CG logo.png" width="200"></a></h1></figure>
+                        <h1><a href="index2.php"><img src="./assets/img/CG logo.png" width="200"></a></h1></figure>
                     <a href="http://9lookjeab.com/hilight-goal" class="icon-bag visible-xs"><i class="fa fa-play" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-sm-9 text-right">
-                    <ul class="navbar">
-                        <li class="active"><a href="./">หน้าหลัก</a></li>
+                  <ul class="navbar">
+                        <li class="active"><a href="index2.php"./">หน้าหลัก</a></li>
                         <li class="dropdown nav-item">
                         <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                              อคาเดมี่
                         </a>
                         <ul class="dropdown-menu dropdown-with-icons dropdown_menu">
-                            <li  >
+                            <li  ng-click="academy('U-9')">
                                 <!-- <i class="material-icons">content_paste</i> -->
                                 <span style="color: #333">U-9</span> 
                             </li>
-                            <li  >
+                            <li  ng-click="academy('U-11')">
                                  
                                 <!-- <i class="material-icons">content_paste</i> -->
                                 <span style="color: #333">U-11</span>
                             </li>
-                            <li  >
+                            <li  ng-click="academy('U-13')">
                                 <!-- <i class="material-icons">content_paste</i>  -->
                                 <span style="color: #333">U-13</span>
 
-                            </li>
-                            <li >
+                            </li >
+                            <li ng-click="academy('U-15')">
                                 <!-- <i class="material-icons">content_paste</i> -->
                                 <span style="color: #333">U-15</span>
 
                             </li>
                         </ul>
                     </li>
-                        <li><a ng-click="menu()" >เพิ่มนักเตะ</a></li>
-                        <li><a ng-click="menu()" >โปรแกรมการแข่งขัน</a></li>
-                        <li><a ng-click="menu()" >เพิ่มโปรแกรมการแข่งขัน</a></li>
+                        <li><a ng-click="addplayer()" id="addplayer">เพิ่มนักเตะ</a></li>
+                        <li><a ng-click="fixtures()" id="fixtures">โปรแกรมการแข่งขัน</a></li>
+                        <li><a ng-click="addfixtures()" id="addfixtures">เพิ่มโปรแกรมการแข่งขัน</a></li>
                     </ul>
                 </div>
             </div>
@@ -312,58 +331,7 @@
                 </div>
                     </div>
                     </section>
-                    <section id="hilight_2" style="display: none;">
-                    <div class="row" >
-                            <div class="col-md-3">
-                    <div class="white-box">
-                        <section class="inner-box news">
-                            <article>
-                                                                    <div class="image-box" style="background-image: url('https://9lookjeab.com/data/cover/news/23/6d/18/18.jpg')"></div>
-                                                                <h4>
-                                    <a href="http://9lookjeab.com/news/view/18">Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันใน</a>
-                                </h4>
-                                <p> มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐานของธุรกิจดังกล่าวมาตั้งแต่ศตวรรษที่ 16 เมื่อเครื่องพิมพ์โนเนมเครื่องหนึ่งนำร...</p>
-                                <div class="news-tool">
-                                    <ul>
-                                        <li>
-                                            <a href="#"><i class="fa fa-search"></i> 467
-                                            </a></li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-clock-o"></i> 1 ปี ที่แล้ว
-                                            </a></li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-                </div>
                     
-                          
-                            <div class="col-md-3">
-                    <div class="white-box">
-                        <section class="inner-box news">
-                            <article>
-                                                                    <div class="image-box" style="background-image: url('https://9lookjeab.com/data/cover/news/f3/2f/15/15.jpg')"></div>
-                                                                <h4>
-                                    <a href="http://9lookjeab.com/news/view/15">Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันใน</a>
-                                </h4>
-                                <p> มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐานของธุรกิจดังกล่าวมาตั้งแต่ศตวรรษที่ 16 เมื่อเครื่องพิมพ์โนเนมเครื่องหนึ่งนำร...</p>
-                                <div class="news-tool">
-                                    <ul>
-                                        <li>
-                                            <a href="#"><i class="fa fa-search"></i> 499
-                                            </a></li>
-                                        <li>
-                                            <a href="#"><i class="fa fa-clock-o"></i> 1 ปี ที่แล้ว
-                                            </a></li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-                </div>
-                    </div>
-                    </section>
                     <section id="coach" style="display: none">
                        <div class="card">
                                 <div class="card-header" data-background-color="blue">

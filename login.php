@@ -220,8 +220,8 @@
                                                 <i class="material-icons">face</i>
                                             </span>
                                             <div class="form-group label-floating is-empty">
-                                                <label class="control-label">First Name</label>
-                                                <input type="text" class="form-control">
+                                                <label class="control-label">Email</label>
+                                                <input type="text" class="form-control" ng-model="email">
                                             <span class="material-input"></span></div>
                                         </div>
                                         <!-- <div class="input-group">
@@ -239,15 +239,14 @@
                                             </span>
                                             <div class="form-group label-floating is-empty">
                                                 <label class="control-label">Password</label>
-                                                <input type="password" class="form-control">
+                                                <input type="password" class="form-control" ng-model="password">
                                             <span class="material-input"></span></div>
                                         </div>
                                     </div>
                                     <div class="footer text-center">
-                                        <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg">LOGIN</button>
+                                        <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg" ng-click="login()">LOGIN</button>
                                     </div>
-                                </div>
-                            </form>
+                                </div>                            </form>
                         </div>
                     </div>
             <!-- <input type="" name="" ng-model="email"> -->
@@ -313,7 +312,8 @@ app.controller("login",  function($scope,$location,$http,$window,$cookies) {
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 }).success(function(res){
                  console.log(res)
-                 console.log(res[0].username)
+                
+                // console.log(res[0].username)
                  if ($cookies.get("login") == undefined) {
                      
                    // $window.location.href = 'login.php';
@@ -330,28 +330,42 @@ app.controller("login",  function($scope,$location,$http,$window,$cookies) {
                        
             });
     $scope.login = function(){
-
+        console.log($scope.email)
+        console.log($scope.password)
 
         $http({
                 method : 'POST',
                 url : "php/login.php",
-                //data: $.param({sv: $scope.dataSV}),
+                data: $.param({'email': $scope.email,'password': $scope.password}),
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 }).success(function(res){
                  console.log(res)
-                 console.log(res[0].username)
-                 if ($cookies.get("users") == undefined) {
-                     
-                    //$window.location.href = 'login.php';
+                  if (res.status == '0') {
+                    // alert("success")
+                    $cookies.put("login", res.username);
+                    $window.location.href = 'index2.php' 
+                 }
+                 else if (res.status == '2') {
+                    alert("password no same")
+
                  }
                  else{
-                    //$window.location.href = 'index.php';
+                    alert("none user")
+
                  }
-                 // if (res[0].username =='admin') {
-                 //     $cookies.put("users", res[0].username); 
+                 //console.log(res[0].username)
+                 // if ($cookies.get("users") == undefined) {
+                     
+                 //    //$window.location.href = 'login.php';
                  // }
-                    var value = $cookies.get("users");
-                    console.log(value)
+                 // else{
+                 //    //$window.location.href = 'index.php';
+                 // }
+                 // if (res[0].username =='admin') {
+                 //     $cookies.put("users", res[0].id); 
+                 // }
+                    //var value = $cookies.get("users");
+                    //onsole.log(value)
                        
                        
             });
