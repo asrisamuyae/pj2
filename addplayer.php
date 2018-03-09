@@ -575,7 +575,7 @@ app.controller('myCtrl', function($scope,$http,$location,$window,$filter,$cookie
                                 , 'address': $scope.address
                                 , 'position': $scope.position
                                 , 'phone': $scope.phone
-                                , 'team': $scope.team
+                                , 'team_class': $scope.team
                                 , 'school': $scope.school
 
 
