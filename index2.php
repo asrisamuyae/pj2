@@ -76,7 +76,7 @@
                         </div>
                     </div>
                     <figure class="logo-section">
-                        <h1><a href="./"><img src="./assets/img/logo.png" width="160"></a></h1></figure>
+                        <h1><a href="./"><img src="./assets/img/CG logo.png" width="200"></a></h1></figure>
                     <a href="http://9lookjeab.com/hilight-goal" class="icon-bag visible-xs"><i class="fa fa-play" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-sm-9 text-right">
@@ -109,8 +109,8 @@
                         </ul>
                     </li>
                         <li><a ng-click="menu()" >เพิ่มนักเตะ</a></li>
-                        <li><a href="http://9lookjeab.com/hilight-full">โปรแกรมการแข่งขัน</a></li>
-                        <li><a href="http://9lookjeab.com/table-score">เพิ่มโปรแกรมการแข่งขัน</a></li>
+                        <li><a ng-click="menu()" >โปรแกรมการแข่งขัน</a></li>
+                        <li><a ng-click="menu()" >เพิ่มโปรแกรมการแข่งขัน</a></li>
                     </ul>
                 </div>
             </div>
@@ -144,11 +144,11 @@
                 <div class="white-box" style="margin-bottom:10px;">
                     <div class="row">
                         <div class="col-sm-7">
-                            <article class="big-news" style="background-image: url('./assets/img/wallpaper-poster.jpg')">
+                            <article class="big-news" style="background-image: url('./assets/img/Paul Pogba.jpg')">
                                 <div class="overlay">
                                     <div class="plain-text">
-                                        <a href="http://9lookjeab.com/home" class="underline-none"><h1>Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันใน...</h1></a>
-                                        <p>มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐานของธุรกิจดังกล่าวมาตั้งแต่ศตวรรษที่ 16 เมื่อเครื่องพิมพ์โนเนมเครื่องหนึ่งนำร</p>
+                                        <a href="http://www.goal.com/th/%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7/%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%AD%E0%B9%80%E0%B8%A2%E0%B8%AD%E0%B8%B0-%E0%B9%84%E0%B8%A3%E0%B9%82%E0%B8%AD%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%9B%E0%B8%AD%E0%B8%81%E0%B8%9A%E0%B8%B2%E0%B8%AA%E0%B8%9A%E0%B8%B2%E0%B8%A2%E0%B8%94%E0%B8%97%E0%B9%81%E0%B8%A1%E0%B8%99%E0%B8%AF-%E0%B8%A2%E0%B9%84%E0%B8%99%E0%B9%80%E0%B8%95%E0%B8%94/t3j8sup5km4319u30ncf24aue" class="underline-none"><h1>อย่าลือเยอะ! ไรโอลายันป็อกบาสบายดีที่แมนฯ ยูไนเต็ด</h1></a>
+                                        <p>มิโน ไรโอลา เอเยนต์ของ พอล ป็อกบา กองกลางแมนเชสเตอร์ ยูไนเต็ด ยืนยันว่าความสัมพันธ์ของนักเตะในความดูแลของเขา กับ โชเซ มูรินโญ ผู้จัดการทีม นั้นยังเป็นไปได้ด้วยดี ไม่มีความขัดแย้งอย่างที่เป็นข่าว</p>
                                     </div>
                                 </div>
                             </article>
@@ -161,45 +161,45 @@
                                     <ul class="news-list">                         
                                         <li>
                                                 <div class="news-item">
-                                                    <a href="http://9lookjeab.com/news/view/22" class="name">Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์</a>
+                                                    <a href="https://www.youtube.com/watch?v=WGBNlJg5q6A"  class="name">รวมไฮไลท์ ลิโอเนล เมสซี่ ฤดูกาล 2017/18</a>
                                                     <ul class="tools">
                                                         <li><a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i>
                                                                 954</a></li>
                                                         <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>
-                                                                1 ปี ที่แล้ว</a></li>
+                                                                3 วัน ที่แล้ว</a></li>
                                                     </ul>
                                                 </div>
                                             </li>
                                                                                     <li>
                                                 <div class="news-item">
-                                                    <a href="http://9lookjeab.com/news/view/21" class="name">Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์</a>
+                                                    <a href="https://www.youtube.com/watch?v=zKLAGqcnpFA" class="name">ชมคลิปทักษะการยิงประตู แอสซิสต์ จาก คริสเตียโน่ โรนัลโด้</a>
                                                     <ul class="tools">
                                                         <li><a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i>
                                                                 559</a></li>
                                                         <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>
-                                                                1 ปี ที่แล้ว</a></li>
+                                                                4 วัน ที่แล้ว</a></li>
                                                     </ul>
                                                 </div>
                                             </li>
                                                                                     <li>
                                                 <div class="news-item">
-                                                    <a href="http://9lookjeab.com/news/view/20" class="name">Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์</a>
+                                                    <a href="http://www.goal.com/th/%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7/%E0%B8%9C%E0%B8%A5%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%81%E0%B8%A9-%E0%B9%80%E0%B8%9B%E0%B8%9B%E0%B8%AB%E0%B8%99%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%AD-%E0%B8%9A%E0%B8%A3%E0%B8%AD%E0%B8%A2%E0%B8%99%E0%B8%8A%E0%B8%87%E0%B8%9A%E0%B8%A5%E0%B8%A5%E0%B8%87%E0%B8%94%E0%B8%AD%E0%B8%A3/yl5q419v6z1c1syuzu3b2bfk3" class="name">ผลงานประจักษ์! เป๊ปหนุน'เดอ บรอยน์'ชิงบัลลงดอร์</a>
                                                     <ul class="tools">
                                                         <li><a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i>
                                                                 582</a></li>
                                                         <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>
-                                                                1 ปี ที่แล้ว</a></li>
+                                                                2 สัปดาห์ ที่แล้ว</a></li>
                                                     </ul>
                                                 </div>
                                             </li>
                                                                                     <li>
                                                 <div class="news-item">
-                                                    <a href="http://9lookjeab.com/news/view/19" class="name">Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์</a>
+                                                    <a href="http://www.siamsport.co.th/football/premierleague/view/57431" class="name">เคนเร้าแข้งสเปอร์สใจต้องแกร่งดวลยูเวนตุส</a>
                                                     <ul class="tools">
                                                         <li><a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i>
                                                                 529</a></li>
                                                         <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>
-                                                                1 ปี ที่แล้ว</a></li>
+                                                                2 สัปดาห์ ที่แล้ว</a></li>
                                                     </ul>
                                                 </div>
                                             </li>
@@ -222,18 +222,18 @@
                     <div class="white-box">
                         <section class="inner-box news">
                             <article>
-                                                                    <div class="image-box" style="background-image: url('https://9lookjeab.com/data/cover/news/23/6d/18/18.jpg')"></div>
+                                                                    <div class="image-box" style="background-image: url('./assets/img/Eden Hazard.jpg')"></div>
                                                                 <h4>
-                                    <a href="http://9lookjeab.com/news/view/18">Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันใน</a>
+                                    <a href="http://www.siamsport.co.th/football/premierleague/view/57474">ส่อชิ่ง!อาซาร์ปัดต่อสัญญาเชลซีหวังซบเรอัล มาดริด</a>
                                 </h4>
-                                <p> มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐานของธุรกิจดังกล่าวมาตั้งแต่ศตวรรษที่ 16 เมื่อเครื่องพิมพ์โนเนมเครื่องหนึ่งนำร...</p>
+                                <p> สื่อแดนผู้ดีกระพือข่าว เอแด็น อาซาร์ ปีก เชลซี ไม่ยอมขยายสัญญาฉบับใหม่กับทีมเพื่อหวังให้ เรอัล มาดริด เข้ามาสนใจดึงตัวนักเตะไปร่วมทัพ เชื่อแข้งวัย 27 ปี พร้อมทำทุกวิถีทางเพื่อให้ได้โยกไปเล่นในรังซานติอาโก้ เบร์นาเบว</p>
                                 <div class="news-tool">
                                     <ul>
                                         <li>
                                             <a href="#"><i class="fa fa-search"></i> 467
                                             </a></li>
                                         <li>
-                                            <a href="#"><i class="fa fa-clock-o"></i> 1 ปี ที่แล้ว
+                                            <a href="#"><i class="fa fa-clock-o"></i> 1 เดือน ที่แล้ว
                                             </a></li>
                                     </ul>
                                 </div>
@@ -245,18 +245,18 @@
                     <div class="white-box">
                         <section class="inner-box news">
                             <article>
-                                                                    <div class="image-box" style="background-image: url('https://9lookjeab.com/data/cover/news/fb/55/17/17.jpg')"></div>
+                                                                    <div class="image-box" style="background-image: url('./assets/img/Mo Salah.jpg')"></div>
                                                                 <h4>
-                                    <a href="http://9lookjeab.com/news/view/17">Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันใน</a>
+                                    <a href="http://www.siamsport.co.th/football/premierleague/view/57900">สตีวี่จีเชิดชูซาลาห์แข้งแอฟริกาเก่งสุดในลีก</a>
                                 </h4>
-                                <p> มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐานของธุรกิจดังกล่าวมาตั้งแต่ศตวรรษที่ 16 เมื่อเครื่องพิมพ์โนเนมเครื่องหนึ่งนำร...</p>
+                                <p>สตีเว่น เจอร์ราร์ด ตำนาน ลิเวอร์พูล ยกย่อง โมฮาเหม็ด ซาลาห์ แข้งแดนมัมมี่ เป็นนักเตะแอฟริกาที่เก่งที่สุดในลีกสูงสุดเมืองผู้ดี ระบุฟอร์มของนักเตะสุดยอดเกินห้ามใจจริงๆ</p>
                                 <div class="news-tool">
                                     <ul>
                                         <li>
                                             <a href="#"><i class="fa fa-search"></i> 524
                                             </a></li>
                                         <li>
-                                            <a href="#"><i class="fa fa-clock-o"></i> 1 ปี ที่แล้ว
+                                            <a href="#"><i class="fa fa-clock-o"></i> 1 เดือน ที่แล้ว
                                             </a></li>
                                     </ul>
                                 </div>
@@ -268,18 +268,18 @@
                     <div class="white-box">
                         <section class="inner-box news">
                             <article>
-                                                                    <div class="image-box" style="background-image: url('https://9lookjeab.com/data/cover/news/af/7b/16/16.jpg')"></div>
+                                                                    <div class="image-box" style="background-image: url('./assets/img/Neymar.jpg')"></div>
                                                                 <h4>
-                                    <a href="http://9lookjeab.com/news/view/16">Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันใน</a>
+                                    <a href="http://www.goal.com/th/%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7/official-%E0%B9%80%E0%B8%99%E0%B8%A2%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%9A%E0%B8%99%E0%B8%9C%E0%B8%B2%E0%B9%80%E0%B8%97%E0%B8%B2%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%8B%E0%B8%A5%E0%B8%8A%E0%B8%A7%E0%B8%94%E0%B8%89%E0%B8%B0%E0%B8%A1%E0%B8%B2%E0%B8%94%E0%B8%A3%E0%B8%94/8hfntq1q9l5211wcnr3v85mve">OFFICIAL: เนย์มาร์บินผ่าเท้าบราซิลชวดฉะมาดริด</a>
                                 </h4>
-                                <p> มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐานของธุรกิจดังกล่าวมาตั้งแต่ศตวรรษที่ 16 เมื่อเครื่องพิมพ์โนเนมเครื่องหนึ่งนำร...</p>
+                                <p>ดาวยิงทีมชาติบราซิลจะพลาดเกมกับราชันชุดขาวแน่นอนแล้ว หลังเปแอสเชยืนยันว่านักเตะจะบินกลับไปผ่าตัดที่บ้านเกิด</p>
                                 <div class="news-tool">
                                     <ul>
                                         <li>
                                             <a href="#"><i class="fa fa-search"></i> 494
                                             </a></li>
                                         <li>
-                                            <a href="#"><i class="fa fa-clock-o"></i> 1 ปี ที่แล้ว
+                                            <a href="#"><i class="fa fa-clock-o"></i> 1 เดือน ที่แล้ว
                                             </a></li>
                                     </ul>
                                 </div>
@@ -291,18 +291,18 @@
                     <div class="white-box">
                         <section class="inner-box news">
                             <article>
-                                                                    <div class="image-box" style="background-image: url('https://9lookjeab.com/data/cover/news/f3/2f/15/15.jpg')"></div>
+                                                                    <div class="image-box" style="background-image: url('./assets/img/Mesut Ozil.jpg')"></div>
                                                                 <h4>
-                                    <a href="http://9lookjeab.com/news/view/15">Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันใน</a>
+                                    <a href="http://www.siamsport.co.th/column/detail/69109">ทำไมโอซิลถึงยอมต่อสัญญาปืน?</a>
                                 </h4>
-                                <p> มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐานของธุรกิจดังกล่าวมาตั้งแต่ศตวรรษที่ 16 เมื่อเครื่องพิมพ์โนเนมเครื่องหนึ่งนำร...</p>
+                                <p> จบกันไปเป็นที่เรียบร้อยสำหรับตลาดซื้อขายนักเตะหน้าหนาวที่แต่ละทีมทุ่มเงินกันอย่างบ้าคลั่งเพื่อพยายามแข่งขันกันรักษาพื้นที่ของตัวเองเอาไว้ในศึกพรีเมียร์ลีก อังกฤษ ให้ได้โดยในตลาดรอบนี้มีเงินสะพัดกว่า 430 ล้านปอนด์ ทำลายสถิเดิมที่เคยทำไว้อย่างถล่มทลาย</p>
                                 <div class="news-tool">
                                     <ul>
                                         <li>
                                             <a href="#"><i class="fa fa-search"></i> 499
                                             </a></li>
                                         <li>
-                                            <a href="#"><i class="fa fa-clock-o"></i> 1 ปี ที่แล้ว
+                                            <a href="#"><i class="fa fa-clock-o"></i> 1 เดือน ที่แล้ว
                                             </a></li>
                                     </ul>
                                 </div>
@@ -409,8 +409,103 @@
                                 </div>
                             </div>
                     </section>
+
+                    <section id="coach" style="display: none">
+                       <div class="card">
+                                <div class="card-header" data-background-color="blue">
+                                    <h4 class="title">Add Player<span ng-bind="class"></span></h4>
+                                    <!-- <p class="category">Here is a subtitle for this table</p> -->
+                                </div>
+                                <div class="card-content table-responsive">
+                                    <table class="table">
+                                        <thead class="text-primary">
+                                            <tr>
+                                                <th>Player Name</th>
+                                                <th>Birthday</th>
+                                                <th>Position</th>
+                                                <th>School</th>
+                                                <th>Height</th>
+                                                <th>Weight</th>
+                                                <th>Foot</th>
+                                                <th>Address</th>
+                                                <th>Phone</th>
+                                                <th>Sign Date</th>
+                                                <th>Release Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                            <tr ng-repeat="item in academyclass">
+                                                <td><span ng-bind="item.name"></span></td>
+                                                <td><span ng-bind="item.birthday"></span></td>
+                                                <td><span ng-bind="item.position"></span></td>
+                                                <td><span ng-bind="item.school"></span></td>
+                                                <td><span ng-bind="item.height"></span></td>
+                                                <td><span ng-bind="item.weight"></span></td>
+                                                <td><span ng-bind="item.foot"></span></td>
+                                                <td><span ng-bind="item.address"></span></td>
+                                                <td><span ng-bind="item.phone"></span></td>
+                                                <td><span ng-bind="item.sign_date"></span></td>
+                                                <td><span ng-bind="item.release_date"></span></td>
+                                                
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                    </section>
+
+                    <section id="coach" style="display: none">
+                       <div class="card">
+                                <div class="card-header" data-background-color="blue">
+                                    <h4 class="title">Fixtures<span ng-bind="class"></span></h4>
+                                    <!-- <p class="category">Here is a subtitle for this table</p> -->
+                                </div>
+                                <div class="card-content table-responsive">
+                                    <table class="table">
+                                        <thead class="text-primary">
+                                            <tr>
+                                                <th>Player Name</th>
+                                                <th>Birthday</th>
+                                                <th>Position</th>
+                                                <th>School</th>
+                                                <th>Height</th>
+                                                <th>Weight</th>
+                                                <th>Foot</th>
+                                                <th>Address</th>
+                                                <th>Phone</th>
+                                                <th>Sign Date</th>
+                                                <th>Release Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                            <tr ng-repeat="item in academyclass">
+                                                <td><span ng-bind="item.name"></span></td>
+                                                <td><span ng-bind="item.birthday"></span></td>
+                                                <td><span ng-bind="item.position"></span></td>
+                                                <td><span ng-bind="item.school"></span></td>
+                                                <td><span ng-bind="item.height"></span></td>
+                                                <td><span ng-bind="item.weight"></span></td>
+                                                <td><span ng-bind="item.foot"></span></td>
+                                                <td><span ng-bind="item.address"></span></td>
+                                                <td><span ng-bind="item.phone"></span></td>
+                                                <td><span ng-bind="item.sign_date"></span></td>
+                                                <td><span ng-bind="item.release_date"></span></td>
+                                                
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                    </section>
+
+
+
             </div>
-    <section class="stadium-section white-box" style="background-image: url('assets/img/wallpaper-poster.jpg')">
+    <section class="stadium-section white-box" style="background-image: url('assets/img/euro wallpaper.jpg')">
         <div class="overlay">
             <div class="container">
                 <div class="row">
