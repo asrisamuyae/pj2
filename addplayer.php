@@ -95,7 +95,7 @@
                         </div>
                     </div>
                     <figure class="logo-section">
-                        <h1><a href="index2.php"><img src="./assets/img/CG logo.png" width="200"></a></h1></figure>
+                        <h1><a href="index2.php"><img src="./assets/img/CG logo6.png" width="200"></a></h1></figure>
                     <a href="http://9lookjeab.com/hilight-goal" class="icon-bag visible-xs"><i class="fa fa-play" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-sm-9 text-right">
@@ -182,7 +182,7 @@
                                 <div style="    font-weight: 600 !important;
     font-size: 20px;
     font-weight: 600;
-    margin-top: 40px;">ADD PLAYER</div>
+    margin-top: 40px;">เพิ่มนักเตะ</div>
                            <!--  <article>
                                 <h1 class="text-center">ไฮไลท์ ฟุตบอล</h1>
                                 <p class="text-center"><b>จัดเต็มทุกคู่ ทุกนัด ไม่มีพลาด</b></p>

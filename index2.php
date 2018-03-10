@@ -75,7 +75,7 @@
    /* width: 60px;*/
     text-align: center;" ng-style="btn_login_yes" ng-bind="getUser" id="btn_login_yes"></div>
     
-                    <form class="form-inline" method="get" action="http://9lookjeab.com/search" style="margin: auto;">
+                    <!-- <form class="form-inline" method="get" action="http://9lookjeab.com/search" style="margin: auto;"> -->
                         <section class="search-section">
                             <button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
                             <input class="form-control round-input" type="text" placeholder="ค้นหา" name="q"></section>
@@ -95,7 +95,7 @@
                         </div>
                     </div>
                     <figure class="logo-section">
-                        <h1><a href="index2.php"><img src="./assets/img/CG logo.png" width="200"></a></h1></figure>
+                        <h1><a href="index2.php"><img src="./assets/img/CG logo6.png" width="200"></a></h1></figure>
                     <a href="http://9lookjeab.com/hilight-goal" class="icon-bag visible-xs"><i class="fa fa-play" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-sm-9 text-right">
@@ -177,11 +177,11 @@
                 <div class="white-box" style="margin-bottom:10px;">
                     <div class="row">
                         <div class="col-sm-7">
-                            <article class="big-news" style="background-image: url('./assets/img/Paul Pogba.jpg')">
+                            <article class="big-news" style="background-image: url('./assets/img/MU v LIV1.jpg')">
                                 <div class="overlay">
                                     <div class="plain-text">
-                                        <a href="http://www.goal.com/th/%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7/%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%AD%E0%B9%80%E0%B8%A2%E0%B8%AD%E0%B8%B0-%E0%B9%84%E0%B8%A3%E0%B9%82%E0%B8%AD%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%9B%E0%B8%AD%E0%B8%81%E0%B8%9A%E0%B8%B2%E0%B8%AA%E0%B8%9A%E0%B8%B2%E0%B8%A2%E0%B8%94%E0%B8%97%E0%B9%81%E0%B8%A1%E0%B8%99%E0%B8%AF-%E0%B8%A2%E0%B9%84%E0%B8%99%E0%B9%80%E0%B8%95%E0%B8%94/t3j8sup5km4319u30ncf24aue" class="underline-none"><h1>อย่าลือเยอะ! ไรโอลายันป็อกบาสบายดีที่แมนฯ ยูไนเต็ด</h1></a>
-                                        <p>มิโน ไรโอลา เอเยนต์ของ พอล ป็อกบา กองกลางแมนเชสเตอร์ ยูไนเต็ด ยืนยันว่าความสัมพันธ์ของนักเตะในความดูแลของเขา กับ โชเซ มูรินโญ ผู้จัดการทีม นั้นยังเป็นไปได้ด้วยดี ไม่มีความขัดแย้งอย่างที่เป็นข่าว</p>
+                                        <a href="http://www.siamsport.co.th/football/premierleague/view/58185" class="underline-none"><h1>แดงเดือดห้าดาว! แรชฟอร์ดเบิ้ล แมนยูเชือดลิเวอร์พูล2-1 ยึดที่2เหนียว</h1></a>
+                                        <p>สุดมัน! แรชฟอร์ดซัด2เม็ดให้ "ปีศาจแดง" นำ 2-0 ก่อนที่ครึ่งหลัง ตั้งเกมรับปล่อยให้ "หงส์แดง" บุกแหลกจนตีไข่แตกได้ สุดท้ายทีมของ มูรินโญ่ คว้าสามแต้มด้วยสกอร์ 2-1 ยึดที่สองแบบทำเอาแฟนผีหายใจไม่ทั่วท้อง หนีทีมของ คล็อปป์ ห้าแต้ม</p>
                                     </div>
                                 </div>
                             </article>
