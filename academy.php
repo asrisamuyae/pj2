@@ -259,7 +259,7 @@
             <div class="row">
                 <div class="col-sm-12" style="padding-top: 30px;padding-bottom: 30px">
                     Copyright © 2018
-                    <a href="https://9lookjeab.com">Football</a>, All rights reserved
+                    <a href="index2.php">Football</a>, All rights reserved
                 </div>
             </div>
         </div>

@@ -142,6 +142,7 @@
     color: #FFFFFF;
 }
 
+
 .dropdown_menu {
     padding: 0px;
 }
@@ -151,8 +152,13 @@
     padding: 8px 29px;
     border-bottom: 1px solid #1eb848;
 }
-    </style>
+.navbar li{
+
+   cursor: pointer;
 }
+
+    </style>
+
 </header><!-- Start Main/Content section -->
 <script >
     function menu() {
@@ -512,7 +518,7 @@
             <div class="row">
                 <div class="col-sm-12" style="padding-top: 30px;padding-bottom: 30px">
                     Copyright © 2018
-                    <a href="https://9lookjeab.com">Football</a>, All rights reserved
+                    <a href="index2.php">Football</a>, All rights reserved
                 </div>
             </div>
         </div>
