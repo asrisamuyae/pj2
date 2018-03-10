@@ -142,10 +142,15 @@
     color: #FFFFFF;
 }
 
-
-
+.dropdown_menu {
+    padding: 0px;
+}
 .dropdown_menu li{
     display: block !important;
+    margin-left: 0;
+    padding: 8px 29px;
+    border-bottom: 1px solid #1eb848;
+}
     </style>
 }
 </header><!-- Start Main/Content section -->

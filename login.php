@@ -346,11 +346,11 @@ app.controller("login",  function($scope,$location,$http,$window,$cookies) {
                     $window.location.href = 'index2.php' 
                  }
                  else if (res.status == '2') {
-                    alert("password no same")
+                    alert("Wrong password")
 
                  }
                  else{
-                    alert("none user")
+                    alert("None user")
 
                  }
                  //console.log(res[0].username)

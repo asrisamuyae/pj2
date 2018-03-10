@@ -215,6 +215,7 @@
                                                 <th>Phone</th>
                                                 <th>Sign Date</th>
                                                 <th>Release Date</th>
+                                            
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -231,7 +232,7 @@
                                                 <td><span ng-bind="item.phone"></span></td>
                                                 <td><span ng-bind="item.sign_date"></span></td>
                                                 <td><span ng-bind="item.release_date"></span></td>
-                                                
+                                               
                                             </tr>
                                             
                                         </tbody>
