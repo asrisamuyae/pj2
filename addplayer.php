@@ -565,7 +565,7 @@ app.controller('myCtrl', function($scope,$http,$location,$window,$filter,$cookie
         console.log($scope.team)
         console.log($scope.school)
         console.log(birthday)
-        console.log($scope.owner)
+        console.log($cookies.get("login"))
 
         $http({
                             method : 'POST',
@@ -582,7 +582,7 @@ app.controller('myCtrl', function($scope,$http,$location,$window,$filter,$cookie
                                 , 'phone': $scope.phone
                                 , 'team_class': $scope.team
                                 , 'school': $scope.school
-                                , 'owner': $scope.owner
+                                , 'owner': $cookies.get("login")
 
 
 
