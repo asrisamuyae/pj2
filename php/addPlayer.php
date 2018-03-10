@@ -2,7 +2,7 @@
 include("../config.php");
 	// $class = $_POST[classs];
 // echo $_POST["name"].$_POST["birthday"].$_POST["position"].$_POST["school"].$_POST["height"].$_POST["weight"].$_POST["foot"].$_POST["address"].$_POST["phone"].time().$_POST["sign_date"].$_POST["release_date"];
-	$sql = "INSERT INTO player (name, birthday, position, school, height, weight, foot, address, phone, post_date, sign_date, release_date, team_class) VALUES ('".$_POST["name"]."', '".$_POST["birthday"]."', '".$_POST["position"]."', '".$_POST["school"]."', '".$_POST["height"]."', '".$_POST["weight"]."', '".$_POST["foot"]."', '".$_POST["address"]."', '".$_POST["phone"]."', '".time()."', '".$_POST["sign_date"]."', '".$_POST["release_date"]."', '".$_POST["team_class"]."' )";
+	$sql = "INSERT INTO player (name, birthday, position, school, height, weight, foot, address, phone, post_date, sign_date, release_date, team_class, owner) VALUES ('".$_POST["name"]."', '".$_POST["birthday"]."', '".$_POST["position"]."', '".$_POST["school"]."', '".$_POST["height"]."', '".$_POST["weight"]."', '".$_POST["foot"]."', '".$_POST["address"]."', '".$_POST["phone"]."', '".time()."', '".$_POST["sign_date"]."', '".$_POST["release_date"]."', '".$_POST["team_class"]."', '".$_POST["owner"]."' )";
 	// $sql = 'select * from player where team_class = "'.$class.'"';
 	$Objquery = mysql_query($sql,$conndb);
     //echo $Objquery;

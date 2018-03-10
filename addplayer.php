@@ -142,6 +142,9 @@
     background-color: #9c27b0;
     color: #FFFFFF;
 }
+
+
+
 .dropdown_menu li{
     display: block !important;
     </style>
@@ -561,6 +564,7 @@ app.controller('myCtrl', function($scope,$http,$location,$window,$filter,$cookie
         console.log($scope.team)
         console.log($scope.school)
         console.log(birthday)
+        console.log($scope.owner)
 
         $http({
                             method : 'POST',
@@ -577,6 +581,7 @@ app.controller('myCtrl', function($scope,$http,$location,$window,$filter,$cookie
                                 , 'phone': $scope.phone
                                 , 'team_class': $scope.team
                                 , 'school': $scope.school
+                                , 'owner': $scope.owner
 
 
 
