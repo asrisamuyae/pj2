@@ -239,7 +239,7 @@
                                         
                                     </ul>
                                 </article>
-                                <footer class="text-center"><a href="http://9lookjeab.com/news" class="btn btn-default">ข่าวเพิ่มเติม</a>
+                                <footer class="text-center"><a href="index2.php" class="btn btn-default">ข่าวเพิ่มเติม</a>
                                 </footer>
                             </section>
                         </div>
