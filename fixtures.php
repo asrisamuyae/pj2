@@ -143,14 +143,11 @@
 }
 .dropdown_menu li{
     display: block !important;
-    </style>
+    
 }
+</style>
 </header><!-- Start Main/Content section -->
-<script >
-    function menu() {
-        $('#hilight').hide()
-        $('#hilight').show()
-</script>
+
 <style>
     .search-section .btn-search{
         left: 100px !important

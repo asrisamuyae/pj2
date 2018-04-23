@@ -127,8 +127,8 @@
                             </li>
                         </ul>
                     </li>
-                        <li><a ng-click="addplayer()" id="addplayer">เพิ่มนักเตะ</a></li>
-                        <li><a ng-click="fixtures()" id="fixtures">โปรแกรมการแข่งขัน</a></li>
+                        <li><a onclick="addplayer()" id="addplayer">เพิ่มนักเตะ</a></li>
+                        <li><a onclick="fixtures()" id="fixtures">โปรแกรมการแข่งขัน</a></li>
                         <li><a ng-click="addfixtures()" id="addfixtures">เพิ่มโปรแกรมการแข่งขัน</a></li>
                     </ul>
                 </div>
@@ -545,6 +545,8 @@
 <script src="./assets/js/angular/angular.min.js"></script>
     <script src="./assets/js/angular/angular-cookies.min.js"></script> 
     <script src="./assets/js/core/main_angular.js"></script>
+    <script src="./assets/js/fixture.js"></script>
+
 
 
 </section></body></html>

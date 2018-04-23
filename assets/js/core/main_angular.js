@@ -100,6 +100,10 @@ app.controller('myCtrl', function($scope,$http,$location,$window,$cookies,$cooki
 		//alert("aaaa")
 		$window.location.href = 'addplayer.php';
 	}
+	$scope.fixtures = function (){
+		//alert("aaaa")
+		$window.location.href = 'fixtures.php';
+	}
 	// $http({
 	//                         method : 'POST',
 	//                         url : 'php/getdetailcoach.php',
