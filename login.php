@@ -21,7 +21,7 @@
 
     <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/vendor/font-awesome.min.css">
 
-    <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/main.css">
+    <link media="all" type="text/css" rel="stylesheet" href="./assets/css/main.css">
 
         <script src="http://9lookjeab.com/assets/javascripts/libs/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
@@ -33,11 +33,11 @@
     <link href="http://9lookjeab.com/assets/assets-for-demo/demo.css" rel="stylesheet" />
 
 </head>
-<body  ng-app="myApp" ng-controller="login">
-<section class="wrapper">
+<body  ng-app="myApp" ng-controller="login" style="background-color: #ffffff">
+
 <!-- Start Header section -->
 <header class="header-side navbar-fixed-top" style="top: 0px;">
-    <section class="top-header hidden-xs">
+    <!-- <section class="top-header hidden-xs" id="">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6"><label>Follow Me</label>
@@ -56,6 +56,7 @@
     font-size: 15px;
     width: 60px;
     text-align: center;">Login</div>
+    
                     <form class="form-inline" method="get" action="http://9lookjeab.com/search" style="margin: auto;">
                         <section class="search-section">
                             <button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
@@ -64,61 +65,10 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="second-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="burger-container">
-                        <div id="burger">
-                            <div class="bar topBar"></div>
-                            <div class="bar btmBar"></div>
-                        </div>
-                    </div>
-                    <figure class="logo-section">
-                        <h1>
-                            <!-- <a href="./"><img src="./assets/img/logo.png" width="160"></a> -->
-                        </h1>
-                        </figure>
-                    <a href="http://9lookjeab.com/hilight-goal" class="icon-bag visible-xs"><i class="fa fa-play" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-sm-9 text-right">
-                    <ul class="navbar">
-                        <li class="active"><a href="./">หน้าหลัก</a></li>
-                        <li class="dropdown nav-item">
-                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                             อคาเดมี่
-                        </a>
-                        <ul class="dropdown-menu dropdown-with-icons dropdown_menu">
-                            <li  >
-                                <!-- <i class="material-icons">content_paste</i> -->
-                                <span style="color: #333">U-9</span> 
-                            </li>
-                            <li  >
-                                 
-                                <!-- <i class="material-icons">content_paste</i> -->
-                                <span style="color: #333">U-11</span>
-                            </li>
-                            <li  >
-                                <!-- <i class="material-icons">content_paste</i>  -->
-                                <span style="color: #333">U-13</span>
+    </section> -->
+   
 
-                            </li>
-                            <li >
-                                <!-- <i class="material-icons">content_paste</i> -->
-                                <span style="color: #333">U-15</span>
-
-                            </li>
-                        </ul>
-                    </li>
-                        <li><a onclick="menu()" >เพิ่มนักเตะ</a></li>
-                        <li><a href="http://9lookjeab.com/hilight-full">โปรแกรมการแข่งขัน</a></li>
-                        <li><a href="http://9lookjeab.com/table-score">เพิ่มโปรแกรมการแข่งขัน</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <style>
         .dropdown_menu li:hover{
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
@@ -194,7 +144,7 @@
     padding: 10px;
 }
 </style>
-<section style="height: 80vh;    background: #fff;">
+<section style="height: 80vh;    background: #fff;" id="login">
     <div class="container">
         <div class="row">
             <div style="margin-top: 75px;">
@@ -245,6 +195,7 @@
                                     </div>
                                     <div class="footer text-center">
                                         <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg" ng-click="login()">LOGIN</button>
+                                        <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg" ng-click="signup()">Signup</button>
                                     </div>
                                 </div>                            </form>
                         </div>
@@ -254,6 +205,42 @@
         </div>
     </div>
     </section>
+    <div id="signup"  style=" display: none;   background: #fff;">
+        <div class="container">
+        <div class="row">
+            <div style="margin-top: 75px;">
+            <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+                            <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+                        </div>
+                    </div>
+            <!-- <input type="" name="" ng-model="email"> -->
+           
+        </div>
+    </div>
+    </div>
     
    
     
@@ -296,8 +283,7 @@
  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 <!-- <script src="./assets/js/main.js"></script> -->
 
-
-</section></body></html>
+</body></html>
 <script>
     var app = angular.module("myApp", ['ngCookies']);
 
@@ -374,6 +360,14 @@ app.controller("login",  function($scope,$location,$http,$window,$cookies) {
     }
     $scope.getNewproduct = function(){
         $window.location.href = 'new.php';
+    }
+    $scope.signup = function(){
+        $('#login').hide()
+        $('#signup').show()
+    }
+    $scope.signin = function(){
+        $('#login').show()
+        $('#signup').hide()
     }
 });
 </script>

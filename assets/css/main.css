@@ -1953,9 +1953,9 @@ a.black-link:hover {
     font-size: 12px;
 }
 
-body {
+/*body {
     padding-top: 111px;
-}
+}*/
 
 @media (max-width: 767px) {
     body {
