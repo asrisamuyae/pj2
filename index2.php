@@ -164,6 +164,7 @@
     function menu() {
         $('#hilight').hide()
         $('#hilight').show()
+    }
 </script>
 <style>
     .search-section .btn-search{

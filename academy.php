@@ -348,7 +348,7 @@ app.controller('myCtrl', function($scope,$http,$location,$window ,$filter,$cooki
                  $http({
                             method : 'POST',
                             url : 'php/getacademy.php',
-                            data: $.param({ 'team_class': $scope.data}),
+                            data: $.param({ 'team_class': $scope.data,'owner':$cookies.get("login")}),
                             headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
                     }).success(function(res){
                             console.log(res);
@@ -381,6 +381,7 @@ app.controller('myCtrl', function($scope,$http,$location,$window ,$filter,$cooki
         
     }
     $scope.academy = function (x){
+        console.log(x)
          $http({
                             method : 'POST',
                             url : 'php/getacademy.php',
