@@ -128,8 +128,35 @@
                         </ul>
                     </li>
                         <li><a onclick="addplayer()" id="addplayer">เพิ่มนักเตะ</a></li>
-                        <li><a onclick="fixtures()" id="fixtures">โปรแกรมการแข่งขัน</a></li>
-                        <li><a ng-click="addfixtures()" id="addfixtures">เพิ่มโปรแกรมการแข่งขัน</a></li>
+                        
+                        <li class="dropdown nav-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                             โปรแกรมการแข่งขัน
+                        </a>
+                        <ul class="dropdown-menu dropdown-with-icons dropdown_menu">
+                            <li ng-click="academy('U-9')" >
+                                <!-- <i class="material-icons">content_paste</i> -->
+                                <span style="color: #333">U-9</span> 
+                            </li>
+                            <li  ng-click="academy('U-11')">
+                                 
+                                <!-- <i class="material-icons">content_paste</i> -->
+                                <span style="color: #333">U-11</span>
+                            </li>
+                            <li  ng-click="academy('U-13')">
+                                <!-- <i class="material-icons">content_paste</i>  -->
+                                <span style="color: #333">U-13</span>
+
+                            </li>
+                            <li ng-click="academy('U-15')">
+                                <!-- <i class="material-icons">content_paste</i> -->
+                                <span style="color: #333">U-15</span>
+
+                            </li>
+                        </ul>
+                    </li>
+
+                        <li><a onclick="addfixtures()" id="addfixtures">เพิ่มโปรแกรมการแข่งขัน</a></li>
                     </ul>
                 </div>
             </div>

@@ -195,7 +195,7 @@
                                     </div>
                                     <div class="footer text-center">
                                         <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg" ng-click="login()">LOGIN</button>
-                                        <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg" ng-click="signup()">Signup</button>
+                                        <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg" ng-click="signup()">SIGNUP</button>
                                     </div>
                                 </div>                            </form>
                         </div>
