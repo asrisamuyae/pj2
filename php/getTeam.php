@@ -1,8 +1,6 @@
 <?
 include("../config.php");
-	// $class = $_POST[classs];
-	$sql = 'select coach.*,t1.name as team_name,t1.id as team_id FROM coach LEFT JOIN team as t1 ON coach.team = t1.id WHERE coach.id = "'.$_POST[id].'" ';
-	// $sql = 'select * from player where team_class = "'.$class.'"';
+	$sql = "select * from team ";
 	$Objquery = mysql_query($sql,$conndb);
 	//echo $Objquery;
 	//$row = mysql_num_rows($Objquery); // นับจำนวนแถว
@@ -22,8 +20,8 @@ $rows = array();
 		// }
 	}
 	else{
-		echo "0";
+		echo "not data";
 		
 	}
 
-?>
+?> 

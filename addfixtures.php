@@ -3,13 +3,13 @@
     <meta charset="UTF-8">
     <title> Coach Gadgets </title>
     <!-- <base href="https://9lookjeab.com"> -->
-    <meta name="description" content="  ">
+     <meta name="description" content="  ">
     <meta name="keywords" content="  ">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="_token" content="K4K8YVEsJPl4AQp3Kas0gI3WCSSIFSCvBtTQY9I5">
     <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/vendor/bootstrap.min.css">
 
-        <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/vendor/flickity.css">
+       <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/vendor/flickity.css">
 
     <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/vendor/ion.rangeSlider.css">
 
@@ -31,6 +31,7 @@
     <!-- Documentation extras -->
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="http://9lookjeab.com/assets/assets-for-demo/demo.css" rel="stylesheet" />
+
 
 </head>
 <body  ng-app="myApp" ng-controller="myCtrl">
@@ -242,15 +243,34 @@
                                     
                                 <div class="row" >
                                 <div class="col-md-12" >
-                                    
-                                            <div class="form-group form-inline">
-                                                <label class="control-label " id="label-addfixtures">Team Name</label>
-                                                <input type="text" class="form-control" size="100" ng-model="team">
+                                    <div class="form-group form-inline">
+                                        <div class="radio">
+                                              <label><input type="checkbox" name="optradio" style=" margin-right: 10px;" ng-click="chhome('home')" ng-value="home" ng-model="home" >Home</label>
+                                            </div>
+                                            <div class="radio">
+                                              <label><input type="checkbox" name="optradio" style="margin-right: 10px;"  ng-click="chhome('away')" ng-model="away" ng-value="away" >Away</label>
+                                            </div>
+                                    </div>
+                                            <div class="form-group form-inline ">
+                                                <label class="control-label col-md-2" id="label-addfixtures">My team</label>
+                                                <input type="text" class="form-control" size="80" ng-model="my_team">
+                                            
+                                            </div> 
+                                            <div class="form-group form-inline ">
+                                                <label class="control-label col-md-2" id="label-addfixtures">Opponent</label>
+                                                <div class="form-group form-inline">
+                                                
+                                                <select class="form-control" id="position" ng-model="sendaway" ng-change="changeAwayteam(sendaway)" data-ng-options="i as i.name for i in dataallteam">
+                                                    <option value="">- none -</option>            
+                                                    <!-- <option ng-value="i.position">{{i.position}}</option>             -->
+                                                   </select>
+                                                <!-- <input type="text" class="form-control" size="100" ng-model="team"> -->
+                                            </div>
                                             
                                             </div> 
                                         
                                         
-                                            <div class="form-group form-inline">
+                                            <!-- <div class="form-group form-inline">
                                                 <label class="control-label " id="label-addfixtures">Competition</label>
                                                 <input type="text" class="form-control" size="100" ng-model="competition">
                                             </div>
@@ -264,12 +284,12 @@
                                             <div class="form-group form-inline">
                                                 <label class="control-label " id="label-addfixtures">Stadium</label>
                                                 <input type="text" class="form-control" size="100" ng-model="stadium">
-                                            </div>                                     
+                                            </div>  -->                                    
                                         
 
                                             <div class="form-group form-inline">
-                                                <label class="control-label " id="label-addfixtures">Team</label>
-                                                <select class="form-control" id="position" ng-model="sendclass" ng-change="changeClass(sendclass)" data-ng-options="i as i.class for i in dataclass">
+                                                <label class="control-label col-md-2" id="label-addfixtures">Class</label>
+                                                <select class="form-control" id="position" ng-model="sendclass" ng-change="changeClass(sendclass)" data-ng-options="i as i.class for i in dataclass" style="    width: 155px">
                                                     <option value="">- none -</option>            
                                                     <!-- <option ng-value="i.position">{{i.position}}</option>             -->
                                                    </select>
@@ -278,13 +298,17 @@
                                             
 
                                             <div class="form-group form-inline">
-                                                <label class="control-label " id="label-addfixtures" >Time</label>
-                                                <input type="date" class="form-control" size="100" ng-model="timed">
+                                                <label class="control-label col-md-2" id="label-addfixtures" >Date</label>
+                                                <input type="date" class="form-control" style="    width: 155px" ng-model="date">
+                                            </div>
+                                            <div class="form-group form-inline">
+                                                <label class="control-label col-md-2" id="label-addfixtures" >Time</label>
+                                                <input type="text" class="form-control" placeholder="17:00" style="    width: 155px" ng-model="timed">
                                             </div>
                                             
                                         
                                         
-    <button ng-click="saveaddplayer()">save</button>
+    <button ng-click="saveaddfixtures()">save</button>
                                 
                                 </div>
                                 </div>
@@ -361,6 +385,10 @@ app.controller('myCtrl', function($scope,$http,$location,$window,$filter,$cookie
     console.log($scope.datafoot)
     console.log($scope.dataposition)
     console.log($scope.birthday)
+    
+    $scope.home = true;
+    $scope.away = false;
+    $scope.txcheck = 'home';
     redyfucntion();
     console.log($cookies.get("login"))
     function redyfucntion(){
@@ -393,8 +421,30 @@ app.controller('myCtrl', function($scope,$http,$location,$window,$filter,$cookie
                         "display" : "none",
                         
                       }
+                      $scope.my_team = res[0].team_name;
                       $scope.getUser = res[0].email;
+                      $scope.idhome = res[0].team_id;
                       console.log($scope.getUser)
+                      $scope.dataallteam = [];
+                      $http({
+                            method : 'POST',
+                            url : "php/gitAllteam.php",
+                            data: $.param({'myteam': $scope.my_team}),
+                            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                            }).success(function(res){
+                             console.log(res)
+                             angular.forEach(res, function(value, key){
+                                  if(value.id != $scope.idhome){
+
+                                     $scope.dataallteam.push(value)
+                                  }
+                               });
+                             
+                            
+                            
+                                   
+                                   
+                        });
                 }
                  else{
                     //$window.location.href = 'index.php';
@@ -407,6 +457,16 @@ app.controller('myCtrl', function($scope,$http,$location,$window,$filter,$cookie
                        
                        
             });
+                $http({
+                            method : 'POST',
+                            url : 'php/getClassteam.php',
+                            // data: formData,
+                            headers : {'Content-Type': 'application/x-www-form-urlencoded'}  
+
+                    }).success(function(res){
+                        $scope.dataclass = res;
+                        console.log($scope.dataclass)
+                    });
         console.log($cookies.get("login"))
         // $scope.username = $scope.user;
         // $scope.password = $scope.pass;
@@ -444,6 +504,40 @@ app.controller('myCtrl', function($scope,$http,$location,$window,$filter,$cookie
      //                        console.log(error);
      //        });
         
+    }
+    $scope.chhome = function (x){
+       
+        console.log(x)
+        if ( x=='home') {
+            $scope.home = true;
+            $scope.away = false;
+
+
+        }
+        else{
+            $scope.away = true;
+            $scope.home = false;
+
+
+        }
+        $scope.txcheck = x;
+       
+        
+
+    }
+    $scope.changeClass = function (x){
+        $scope.idclass = x.class;
+        console.log(x)
+        console.log( $scope.idclass)
+        
+
+    }
+    $scope.changeAwayteam = function (x){
+        $scope.idaway = x.id;
+        console.log(x)
+
+        
+
     }
     $scope.login = function (){
         if ($cookies.get("login") == undefined) {
@@ -487,45 +581,56 @@ app.controller('myCtrl', function($scope,$http,$location,$window,$filter,$cookie
         $scope.foot = x;
         console.log($scope.foot)
     }
-    $scope.changeClass = function(x){
-        console.log(x)
-        $scope.team = x.class;
-        console.log($scope.team)
-    }
-    $scope.saveaddplayer = function(){
-        console.log($scope.name)
-        var date =  $filter('date')(new Date($scope.birthday), 'dd-MM-yyyy');
-        var sign_date =  $filter('date')(new Date($scope.sign_date), 'dd-MM-yyyy');
-        var release_date =  $filter('date')(new Date($scope.release_date), 'dd-MM-yyyy');
-        var birthday =  $filter('date')(new Date($scope.birthday), 'dd-MM-yyyy');
+    // $scope.changeClass = function(x){
+    //     console.log(x)
+    //     $scope.team = x.class;
+    //     console.log($scope.team)
+    // }
+    $scope.saveaddfixtures = function(){
+       
+        var date =  $filter('date')(new Date($scope.date), 'yyyy-MM-dd');
+        // var sign_date =  $filter('date')(new Date($scope.sign_date), 'dd-MM-yyyy');
+        // var release_date =  $filter('date')(new Date($scope.release_date), 'dd-MM-yyyy');
+        // var birthday =  $filter('date')(new Date($scope.birthday), 'dd-MM-yyyy');
         
         //$scope.birthday = 
         console.log(date)
-        console.log($scope.team)
-        console.log($scope.competition)
-        console.log($scope.league)
-        console.log($scope.stadium)
+        console.log($scope.idaway)
+        console.log($scope.idclass)
+        
+        
         console.log($scope.timed)
-        console.log($cookies.get("login"))
+        console.log($scope.home)
+        console.log($scope.away)
+       
+        var finalhome,finalaway;
+        if ($scope.txcheck == 'home') {
+            finalhome = $scope.idhome;
+            finalaway = $scope.idaway;
+        }
+        else {
+            finalhome = $scope.idaway;
+            finalaway = $scope.idhome;
+        }
+        
+        console.log(finalhome)
+        console.log(finalaway)
 
         $http({
                             method : 'POST',
                             url : 'php/addFixtures.php',
-                            data: 'team': $scope.team
-                                , 'competition': $scope.competition
-                                , 'league': $scope.league
-                                , 'stadium': $scope.stadium
+                            data: $.param({ 'away': finalaway
+                                , 'home': finalhome
+                                , 'date': date
+                                , 'class': $scope.idclass
                                 , 'timed': $scope.timed
                                 , 'owner': $cookies.get("login")
-
-
-
                             }),
                             headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
                     }).success(function(res){
                             console.log(res);
                             if (res == 1) {
-                           $window.location.href = 'fixtures.php';
+                                    $window.location.href = 'fixtures.php';
                             }
                             else{
                                 alert('err')
@@ -586,54 +691,6 @@ app.controller('myCtrl', function($scope,$http,$location,$window,$filter,$cookie
     
 });
 </script>
-<script>
-    $(document).ready(function () {
-        $('#logo').addClass('animated fadeInDown');
-        $("input:text:visible:first").focus();
 
-        $("#submit").click(function(event) {
-            /* Act on the event */
-        });
-    //  $("#submit").click(function(){
-    //      var pass = $("#password").val()
-    //      var username = $("#username").val()
-    //      //alert("The paragraph was clicked.");
-    //      console.log(username)
-    //      console.log(pass)
-    //      var markers = [{ "position": "128.3657142857143", "markerPosition": "7" },
-    //            { "position": "235.1944023323615", "markerPosition": "19" },
-    //            { "position": "42.5978231292517", "markerPosition": "-3" }];
-
-    //      $.ajax({
-          //       url: "php/getacademy.php",
-          //       type: "post",
-          //       data: JSON.stringify({ 'classs': "U-9"}),
-          //       contentType: "application/json; charset=utf-8", 
-          //       dataType: "json",
-             //    success: function(data){
-             //     console.log(data);
-             //    },
-             //    failure: function(errMsg) {
-             //        alert(errMsg);
-             //    }
-
-
-    // });
-
-        //});
-    });
-    $('#username').focus(function() {
-        $('label[for="username"]').addClass('selected');
-    });
-    $('#username').blur(function() {
-        $('label[for="username"]').removeClass('selected');
-    });
-    $('#password').focus(function() {
-        $('label[for="password"]').addClass('selected');
-    });
-    $('#password').blur(function() {
-        $('label[for="password"]').removeClass('selected');
-    });
-</script>
 </body>
 </html>

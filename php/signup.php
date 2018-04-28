@@ -1,10 +1,10 @@
 <?
 include("../config.php");
-    // $class = $_POST[classs];
+	// $class = $_POST[classs];
 // echo $_POST["name"].$_POST["birthday"].$_POST["position"].$_POST["school"].$_POST["height"].$_POST["weight"].$_POST["foot"].$_POST["address"].$_POST["phone"].time().$_POST["sign_date"].$_POST["release_date"];
-    $sql = "INSERT INTO fixtures (timed, home, dates, away, class,owner, post_date) VALUES ('".$_POST["timed"]."', '".$_POST["home"]."', '".$_POST["date"]."', '".$_POST["away"]."', '".$_POST["class"]."', '".$_POST["owner"]."', '".time()."') ";
-    // $sql = 'select * from player where team_class = "'.$class.'"';
-    $Objquery = mysql_query($sql,$conndb);
+	$sql = "INSERT INTO coach (email, password, team) VALUES ('".$_POST["email"]."', '".$_POST["password"]."', '".$_POST["team"]."') ";
+	// $sql = 'select * from player where team_class = "'.$class.'"';
+	$Objquery = mysql_query($sql,$conndb);
     //echo $Objquery;
     //$row = mysql_num_rows($Objquery); // นับจำนวนแถว
 $rows = array();
@@ -15,10 +15,8 @@ $rows = array();
       
     }
     else{
-        echo "0";
+        echo "0";;
         
     }
 
 ?>
-
-

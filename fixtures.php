@@ -225,12 +225,20 @@
     <div class="container">
             <div class="card-content" style="">
             <div class="row">
+                <div class="form-group form-inline">
+                                                <label class="control-label col-md-2" id="label-addfixtures">Class</label>
+                                                <select class="form-control" id="position" ng-model="sendclass" ng-change="changeclassteam(sendclass)" data-ng-options="i as i.class for i in dataclass" style="    width: 155px">
+                                                    <option value="">- none -</option>            
+                                                    <!-- <option ng-value="i.position">{{i.position}}</option>             -->
+                                                   </select>
+                                                <!-- <input type="text" class="form-control" size="100" ng-model="team"> -->
+                                            </div>
                 <div class="col-md-12">
                     <table width="100%">
-                        <tr>
+                        <tr  ng-repeat="item in datafinal" >
                             <td style="border: solid 1px #E0E0E0;padding: 20px">
                                 <table width="100%">
-                                    <tr>
+                                    <tr >
                                         <td>
                                             <table width="100%" >
                                                 <tr>
@@ -239,32 +247,29 @@
                                                     </td>
                                                     <td align="">
                                                         
-                                                        <span style="margin-left: 15px">Man-u</span>
+                                                        <span style="margin-left: 15px" ng-bind="item.teamhome"></span>
 
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/new.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        <span style="margin-left: 15px">New</span>
-                                                    </td>
-                                                </tr>
+                                                
                                             </table>
                                         </td>
-                                        <td>
-                                            <table width="100% ">
-                                                <tr>
-                                                    <td align="center">11-11-2007</td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center">08.00 AM</td>
-                                                </tr>
-                                            </table>
-                                        </td>
+                                       
                                     </tr>
                                 </table>
+                            </td>
+                             <td >
+                                            <table width="100% ">
+                                                <tr>
+                                                    <td align="center" ng-bind="item.dates"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" ng-bind="item.timed"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" ng-bind="item.class"></td>
+                                                </tr>
+                                            </table>
                             </td>
                             <td style="border: solid 1px #E0E0E0;padding: 20px">
                                 <table width="100%">
@@ -277,424 +282,19 @@
                                                     </td>
                                                     <td align="">
                                                         
-                                                        <span style="margin-left: 15px">Man-u</span>
+                                                        <span style="margin-left: 15px" ng-bind="item.teamaway"></span>
                                                         
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/new.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        <span style="margin-left: 15px">New</span>
-                                                    </td>
-                                                </tr>
                                             </table>
                                         </td>
-                                        <td>
-                                            <table width="100% ">
-                                                <tr>
-                                                    <td align="center">11-11-2007</td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center">08.00 AM</td>
-                                                </tr>
-                                            </table>
-                                        </td>
+                                       
                                     </tr>
                                 </table>
                             </td>
                         </tr>
-                        <tr>
-                            <td style="border: solid 1px #E0E0E0;padding: 20px">
-                                <table width="100%">
-                                    <tr>
-                                        <td>
-                                            <table width="100%" >
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/man-u.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        
-                                                        <span style="margin-left: 15px">Man-u</span>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/new.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        <span style="margin-left: 15px">New</span>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table width="100% ">
-                                                <tr>
-                                                    <td align="center">11-11-2007</td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center">08.00 AM</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td style="border: solid 1px #E0E0E0;padding: 20px">
-                                <table width="100%">
-                                    <tr>
-                                        <td style="">
-                                            <table width="100%" >
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/man-u.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        
-                                                        <span style="margin-left: 15px">Man-u</span>
-                                                        
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/new.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        <span style="margin-left: 15px">New</span>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table width="100% ">
-                                                <tr>
-                                                    <td align="center">11-11-2007</td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center">08.00 AM</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="border: solid 1px #E0E0E0;padding: 20px">
-                                <table width="100%">
-                                    <tr>
-                                        <td>
-                                            <table width="100%" >
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/man-u.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        
-                                                        <span style="margin-left: 15px">Man-u</span>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/new.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        <span style="margin-left: 15px">New</span>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table width="100% ">
-                                                <tr>
-                                                    <td align="center">11-11-2007</td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center">08.00 AM</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td style="border: solid 1px #E0E0E0;padding: 20px">
-                                <table width="100%">
-                                    <tr>
-                                        <td style="">
-                                            <table width="100%" >
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/man-u.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        
-                                                        <span style="margin-left: 15px">Man-u</span>
-                                                        
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/new.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        <span style="margin-left: 15px">New</span>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table width="100% ">
-                                                <tr>
-                                                    <td align="center">11-11-2007</td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center">08.00 AM</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="border: solid 1px #E0E0E0;padding: 20px">
-                                <table width="100%">
-                                    <tr>
-                                        <td>
-                                            <table width="100%" >
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/man-u.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        
-                                                        <span style="margin-left: 15px">Man-u</span>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/new.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        <span style="margin-left: 15px">New</span>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table width="100% ">
-                                                <tr>
-                                                    <td align="center">11-11-2007</td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center">08.00 AM</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td style="border: solid 1px #E0E0E0;padding: 20px">
-                                <table width="100%">
-                                    <tr>
-                                        <td style="">
-                                            <table width="100%" >
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/man-u.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        
-                                                        <span style="margin-left: 15px">Man-u</span>
-                                                        
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/new.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        <span style="margin-left: 15px">New</span>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table width="100% ">
-                                                <tr>
-                                                    <td align="center">11-11-2007</td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center">08.00 AM</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="border: solid 1px #E0E0E0;padding: 20px">
-                                <table width="100%">
-                                    <tr>
-                                        <td>
-                                            <table width="100%" >
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/man-u.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        
-                                                        <span style="margin-left: 15px">Man-u</span>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/new.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        <span style="margin-left: 15px">New</span>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table width="100% ">
-                                                <tr>
-                                                    <td align="center">11-11-2007</td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center">08.00 AM</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td style="border: solid 1px #E0E0E0;padding: 20px">
-                                <table width="100%">
-                                    <tr>
-                                        <td style="">
-                                            <table width="100%" >
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/man-u.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        
-                                                        <span style="margin-left: 15px">Man-u</span>
-                                                        
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/new.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        <span style="margin-left: 15px">New</span>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table width="100% ">
-                                                <tr>
-                                                    <td align="center">11-11-2007</td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center">08.00 AM</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="border: solid 1px #E0E0E0;padding: 20px">
-                                <table width="100%">
-                                    <tr>
-                                        <td>
-                                            <table width="100%" >
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/man-u.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        
-                                                        <span style="margin-left: 15px">Man-u</span>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/new.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        <span style="margin-left: 15px">New</span>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table width="100% ">
-                                                <tr>
-                                                    <td align="center">11-11-2007</td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center">08.00 AM</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td style="border: solid 1px #E0E0E0;padding: 20px">
-                                <table width="100%">
-                                    <tr>
-                                        <td style="">
-                                            <table width="100%" >
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/man-u.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        
-                                                        <span style="margin-left: 15px">Man-u</span>
-                                                        
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" width="24">
-                                                        <img src="./images/imgteam/new.png" width="24px">
-                                                    </td>
-                                                    <td align="">
-                                                        <span style="margin-left: 15px">New</span>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td>
-                                            <table width="100% ">
-                                                <tr>
-                                                    <td align="center">11-11-2007</td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center">08.00 AM</td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
+                       
+                       
                     </table>
                 </div>
             
@@ -742,7 +342,343 @@
 <!-- <script src="./assets/js/main.js"></script> -->
 <script src="./assets/js/angular/angular.min.js"></script>
     <script src="./assets/js/angular/angular-cookies.min.js"></script> 
-    <script src="./assets/js/core/main_angular.js"></script>
+    <!-- <script src="./assets/js/core/main_angular.js"></script> -->
 
 
-</section></body></html>
+</section>
+<script>
+ var app = angular.module('myApp', ['ngCookies']);
+app.controller('myCtrl', function($scope,$http,$location,$window,$filter,$cookies,$cookieStore) {
+    $scope.test = "TEST";
+    //alert('aaaaa')
+    var today = new Date();
+    var date =  new Date(today.getFullYear()+'-'+(today.getMonth()+1)+'-1');
+    // $scope.birthday = date;
+    $scope.dataposition = [{position:'GK'},{position:'CB'},{position:'RB'},{position:'LB'},{position:'DMF'},{position:'CMF'},{position:'LMF'},{position:'AMF'},{position:'RW'},{position:'LW'},{position:'SS'},{position:'CF'}];
+    $scope.datafoot = [{foot:'Right'},{foot:'Left'},{foot:'Both'}];
+    console.log($scope.datafoot)
+    console.log($scope.dataposition)
+    console.log($scope.birthday)
+    $scope.datafinal = [];
+    
+    $scope.home = true;
+    $scope.away = false;
+    $scope.txcheck = 'home';
+    redyfucntion();
+    console.log($cookies.get("login"))
+    function redyfucntion(){
+        //alert('asasa')
+         if ($cookies.get("login") == undefined) {
+             $scope.btn_login_yes = {
+                        "display" : " none",
+                        
+                      }
+                       $scope.btn_login_no = {
+                        "display" : "inline-block",
+                        
+                      }
+        }
+        $http({
+                method : 'POST',
+                url : "php/gitCoachbyid.php",
+                data: $.param({'id': $cookies.get("login")}),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                }).success(function(res){
+                 console.log(res)
+                 console.log(res[0].username)
+                 if (res != 0) {
+                     
+                   $scope.btn_login_yes = {
+                        "display" : " inline-block",
+                        
+                      }
+                       $scope.btn_login_no = {
+                        "display" : "none",
+                        
+                      }
+                      $scope.my_team = res[0].team_name;
+                      $scope.getUser = res[0].email;
+                      $scope.idhome = res[0].team_id;
+                      console.log($scope.getUser)
+                      $scope.dataallteam = [];
+                      $http({
+                            method : 'POST',
+                            url : "php/getFixtures.php",
+                            data: $.param({'owner': $cookies.get("login")}),
+                            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                            }).success(function(res){
+                             console.log(res)
+                            $scope.datafixtures = res;
+                            angular.forEach($scope.datafixtures, function(value, key){
+                                  if(value.class == 'U-15'){
+
+                                     $scope.datafinal.push(value)
+                                  }
+                               });
+                             
+                            
+                            
+                                   
+                                   
+                        });
+                }
+                 else{
+                    //$window.location.href = 'index.php';
+                 }
+                 // if (res[0].username =='admin') {
+                 //     $cookies.put("users", res[0].username); 
+                 // }
+                    var value = $cookies.get("login");
+                    console.log(value)
+                       
+                       
+            });
+                $http({
+                            method : 'POST',
+                            url : 'php/getClassteam.php',
+                            // data: formData,
+                            headers : {'Content-Type': 'application/x-www-form-urlencoded'}  
+
+                    }).success(function(res){
+                        $scope.dataclass = res;
+                        console.log($scope.dataclass)
+                    });
+        console.log($cookies.get("login"))
+        // $scope.username = $scope.user;
+        // $scope.password = $scope.pass;
+        // console.log($scope.username)
+        // console.log($scope.password)
+        
+     //    var formData = { username: $scope.username, password : $scope.password };
+                    
+     //                $http({
+     //                        method : 'POST',
+     //                        url : 'php/connect.php',
+     //                        data: formData,
+     //                        headers : {'Content-Type': 'application/x-www-form-urlencoded'}  
+
+     //                }).success(function(res){
+     //                        console.log(res);
+     //                        $scope.lpass = res.password;
+     //                        $scope.luser = res.username;
+     //                        console.log($scope.lpass);
+     //                        console.log($scope.luser);
+     //                        if ($scope.luser == $scope.username && $scope.lpass == $scope.password) {
+     //                             console.log("login success")
+     //                          // $cookieStore.put('dotobject', $scope.lpass);
+     //                          // $cookieStore.get('dotobject')
+     //                        }
+     //                        else{
+     //                         console.log("login fail")
+
+     //                        }
+
+
+
+
+     //                }).error(function(error){
+     //                        console.log(error);
+     //        });
+        
+    }
+    $scope.chhome = function (x){
+       
+        console.log(x)
+        if ( x=='home') {
+            $scope.home = true;
+            $scope.away = false;
+
+
+        }
+        else{
+            $scope.away = true;
+            $scope.home = false;
+
+
+        }
+        $scope.txcheck = x;
+       
+        
+
+    }
+    // ****************************************************************************
+    $scope.changeclassteam = function(x){
+        console.log(x)
+        $scope.datafinal = [];
+        angular.forEach($scope.datafixtures, function(value, key){
+                                  if(value.class == x.class){
+
+                                     $scope.datafinal.push(value)
+                                  }
+                               });
+
+    }
+    // *******************************************************************
+    $scope.changeClass = function (x){
+        $scope.idclass = x.class;
+        console.log(x)
+        console.log( $scope.idclass)
+        
+
+    }
+    $scope.changeAwayteam = function (x){
+        $scope.idaway = x.id;
+        console.log(x)
+
+        
+
+    }
+    $scope.login = function (){
+        if ($cookies.get("login") == undefined) {
+              $window.location.href = 'login.php';
+        }
+    }
+    $scope.logout = function (){
+        $cookies.remove("login");
+              $window.location.href = 'login.php';
+
+    }
+    $scope.academy = function (x){
+        console.log(x)
+              $window.location.href = 'academy.php#?data='+x;
+        
+    }
+    $http({
+                            method : 'POST',
+                            url : 'php/getClassteam.php',
+                            // data: formData,
+                            headers : {'Content-Type': 'application/x-www-form-urlencoded'}  
+
+                    }).success(function(res){
+                        $scope.dataclass = res;
+                        console.log($scope.dataclass)
+                    });
+    $scope.logo = function(){
+        $window.location.href = 'index.php';
+    }
+    $scope.changename = function(x){
+        $scope.cname = x;
+        console.log($scope.cname)
+    }
+    $scope.changePosition = function(x){
+        console.log(x)
+        $scope.position = x;
+        console.log($scope.position)
+    }
+    $scope.changeFoot = function(x){
+        console.log(x)
+        $scope.foot = x;
+        console.log($scope.foot)
+    }
+    // $scope.changeClass = function(x){
+    //     console.log(x)
+    //     $scope.team = x.class;
+    //     console.log($scope.team)
+    // }
+    $scope.saveaddfixtures = function(){
+       
+        var date =  $filter('date')(new Date($scope.date), 'yyyy-MM-dd');
+        // var sign_date =  $filter('date')(new Date($scope.sign_date), 'dd-MM-yyyy');
+        // var release_date =  $filter('date')(new Date($scope.release_date), 'dd-MM-yyyy');
+        // var birthday =  $filter('date')(new Date($scope.birthday), 'dd-MM-yyyy');
+        
+        //$scope.birthday = 
+        console.log(date)
+        console.log($scope.idaway)
+        console.log($scope.idclass)
+        
+        
+        console.log($scope.timed)
+        console.log($scope.home)
+        console.log($scope.away)
+       
+        var finalhome,finalaway;
+        if ($scope.txcheck == 'home') {
+            finalhome = $scope.idhome;
+            finalaway = $scope.idaway;
+        }
+        else {
+            finalhome = $scope.idaway;
+            finalaway = $scope.idhome;
+        }
+        
+        console.log(finalhome)
+        console.log(finalaway)
+
+        $http({
+                            method : 'POST',
+                            url : 'php/addFixtures.php',
+                            data: $.param({ 'away': finalaway
+                                , 'home': finalhome
+                                , 'date': date
+                                , 'class': $scope.idclass
+                                , 'timed': $scope.timed
+                                , 'owner': $cookies.get("login")
+                            }),
+                            headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
+                    }).success(function(res){
+                            console.log(res);
+                            if (res == 1) {
+                                    $window.location.href = 'fixtures.php';
+                            }
+                            else{
+                                alert('err')
+                            }
+                        });
+                           
+                            
+
+
+
+
+    }
+    // $scope.academyclass = [];
+    // $scope.getacademy = function(x){
+    //  $scope.academyclass = [];
+    //  console.log(x);
+    //  $scope.class = x;
+    //  console.log($scope.academydata);
+    //  for (var i = 0; i < $scope.academydata.length; i++) {
+    //      //console.log($scope.academydata[i]);
+    //      console.log($scope.academydata[i].team_class);
+    //      if(x == $scope.academydata[i].team_class){
+    //          //console.log($scope.academydata)
+                
+    //          $scope.academyclass.push($scope.academydata[i]);
+    //          $('#academy').modal('show');
+    //      }
+    //      if(x == 'All'){
+    //          //alert('aaaaa');
+    //          $scope.academyclass.push($scope.academydata[i]);
+    //          $('#academy').modal('show');
+    //      }
+    //  }
+    //  // console.log('======================================================');
+        
+    //   // angular.forEach($scope.academydata, function(data, i){
+ //   //            console.log(data)
+ //   //        });
+
+    // }
+    
+//  $http({
+//                          method : 'POST',
+//                          url : 'php/getacademy.php',
+//                          //data: $.param({ 'classs': "U-9"}),
+//                          headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
+//                  }).success(function(res){
+//                          console.log(res);
+//                          $scope.academydata = res;
+                            
+
+
+
+
+//                  }).error(function(error){
+//                          console.log(error);
+//          });
+    
+});
+</script>
+
+</body></html>

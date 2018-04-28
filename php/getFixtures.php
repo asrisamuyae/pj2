@@ -1,7 +1,10 @@
 <?
 include("../config.php");
 	// $class = $_POST[classs];
-	$sql = 'select coach.*,t1.name as team_name,t1.id as team_id FROM coach LEFT JOIN team as t1 ON coach.team = t1.id WHERE coach.id = "'.$_POST[id].'" ';
+	$sql = 'select fixtures.*,team_home.name as teamhome,team_away.name as teamaway from fixtures  
+	LEFT JOIN team as team_home ON fixtures.home = team_home.id 
+	LEFT JOIN team as team_away ON fixtures.away = team_away.id 
+	WHERE owner = "'.$_POST['owner'].'" ORDER BY dates ASC';
 	// $sql = 'select * from player where team_class = "'.$class.'"';
 	$Objquery = mysql_query($sql,$conndb);
 	//echo $Objquery;

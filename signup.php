@@ -21,7 +21,7 @@
 
     <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/vendor/font-awesome.min.css">
 
-    <link media="all" type="text/css" rel="stylesheet" href="./assets/css/main.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://9lookjeab.com/assets/stylesheets/main.css">
 
         <script src="http://9lookjeab.com/assets/javascripts/libs/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
@@ -31,7 +31,6 @@
     <!-- Documentation extras -->
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="http://9lookjeab.com/assets/assets-for-demo/demo.css" rel="stylesheet" />
-
 </head>
 <body  ng-app="myApp" ng-controller="login" style="background-color: #ffffff">
 
@@ -152,16 +151,8 @@
                             <form method="#" action="#">
                                 <div class="card card-login">
                                     <div class="card-header text-center" data-background-color="rose">
-                                        <h4 class="card-title">Login</h4>
-                                        <div class="social-line">
-                                            <a href="#btn" class="btn btn-just-icon btn-simple">
-                                                <i class="fa fa-facebook-square"></i>
-                                            </a>
-                                            
-                                            <a href="#eugen" class="btn btn-just-icon btn-simple">
-                                                <i class="fa fa-google-plus"></i>
-                                            </a>
-                                        </div>
+                                        <h4 class="card-title">Signup</h4>
+                                        
                                     </div>
                                   
                                     <div class="card-content">
@@ -170,8 +161,8 @@
                                                 <i class="material-icons">face</i>
                                             </span>
                                             <div class="form-group label-floating is-empty">
-                                                <label class="control-label">Email</label>
-                                                <input type="text" class="form-control" ng-model="email">
+                                                <!-- <label class="control-label">Email</label> -->
+                                                <input type="email" class="form-control" placeholder="Email" ng-model="email">
                                             <span class="material-input"></span></div>
                                         </div>
                                         <!-- <div class="input-group">
@@ -188,16 +179,47 @@
                                                 <i class="material-icons">lock_outline</i>
                                             </span>
                                             <div class="form-group label-floating is-empty">
-                                                <label class="control-label">Password</label>
-                                                <input type="password" class="form-control" ng-model="password">
+                                                <!-- <label class="control-label">Password</label> -->
+                                                <input type="password" class="form-control" placeholder="Password" ng-model="password">
                                             <span class="material-input"></span></div>
                                         </div>
+
+                                        <div class="form-group form-inline">
+                                                <label class="control-label col-md-2" id="label-addplayer" >Team</label>
+                                                <!-- <select ng-model="position" ng-change="position()">
+                                                  <option ng-repeat="i in dataposition" ng-value="i" ><span ng-bind="i"> </span></option>
+                                                  
+                                                </select> -->
+                                                 <select class="col-md-10" id="position" ng-model="team" ng-change="changeteam(team)" data-ng-options="i as i.name for i in datateam" style="
+    
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    margin-bottom: 30px">
+                                                    <option class="" value="">- Please Select -</option>            
+                                                    <!-- <option ng-value="i.position">{{i.position}}</option>             -->
+                                                </select>
+                                                <!-- <input type="text" class="form-control" size="100" ng-model="position"> -->
+                                            </div>
+
+
                                     </div>
                                     <div class="footer text-center">
-                                         <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg" ng-click="login()">LOGIN</button>
+                                         <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg" ng-click="signup()">SIGNUP</button>
                                          <div>
-                                             <span>  Not a member?  </span>
-                                             <span ng-click="signup()"><a>  Sign Up Now  </a> </span>
+                                             <span>  Have a member?  </span>
+                                             <span ng-click="signin()"><a>  Sign In  </a></span>
 
                                          </div>
                                     </div>
@@ -280,6 +302,19 @@ app.controller("login",  function($scope,$location,$http,$window,$cookies) {
                        
                        
             });
+                 $http({
+                method : 'POST',
+                url : "php/getTeam.php",
+                //data: $.param({sv: $scope.dataSV}),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                }).success(function(res){
+                 console.log(res)
+                $scope.datateam = res;
+                // console.log(res[0].username)
+                
+                       
+                       
+            });
     $scope.login = function(){
         console.log($scope.email)
         console.log($scope.password)
@@ -323,14 +358,59 @@ app.controller("login",  function($scope,$location,$http,$window,$cookies) {
 
         //$scope.
     }
+    $scope.changeteam = function(x){
+        console.log(x)
+        $scope.idteam = x.id;
+
+    }
     $scope.getNewproduct = function(){
         $window.location.href = 'new.php';
     }
     $scope.signup = function(){
-         $window.location.href = 'signup.php';
-        
+        console.log($scope.idteam)
+        console.log($scope.email)
+        console.log($scope.password)
+        if ($scope.email == '') {
+            alert('Please input email')
+        }
+        if ($scope.email != '' && $scope.password == '') {
+            alert('Please input password')
+        }
+        if ($scope.email != '' && $scope.password != '' && $scope.idteam == undefined) {
+            alert('Please select team')
+        }
+        if ($scope.email != '' && $scope.password != '' && $scope.idteam != undefined) {
+            console.log('in case requ')
+            $http({
+                method : 'POST',
+                url : "php/signup.php",
+                data: $.param({'email': $scope.email,'password': $scope.password,'team': $scope.idteam}),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                }).success(function(res){
+                 console.log(res)
+                 if (res == 1) {
+                     $window.location.href = 'login.php' 
+                 }
+                 else{
+                    $window.location.reload();
+                 }
+
+                  
+                    // alert("success")
+                    //$cookies.put("login", res.username);
+                   
+                 
+                 
+                 
+                       
+                       
+            });
+        }
+         
+       
     }
-    
-    
+    $scope.signin = function(){
+        $window.location.href = 'login.php'
+    }
 });
 </script>
