@@ -211,14 +211,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <!-- <section class="inner-box inverse">
-                            <header>
-                                <h4>Hilight Football</h4></header>
-                            <article>
+                        <section class="inner-box inverse" style="text-align: center;">
+                           
+                                <div style="    font-weight: 600 !important;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;">โปรแกรมการแข่งขัน</div>
+                           <!--  <article>
                                 <h1 class="text-center">ไฮไลท์ ฟุตบอล</h1>
                                 <p class="text-center"><b>จัดเต็มทุกคู่ ทุกนัด ไม่มีพลาด</b></p>
-                            </article>
-                        </section> -->
+                            </article> -->
+                        </section>
                     </div>
                 </div>
             </div>

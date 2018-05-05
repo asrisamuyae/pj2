@@ -186,7 +186,7 @@
                                 <div style="    font-weight: 600 !important;
     font-size: 20px;
     font-weight: 600;
-    margin-top: 40px;">เพิ่มปฏิทินการแข่งขัน</div>
+    margin-top: 40px;">เพิ่มโปรแกรมการแข่งขัน</div>
                            <!--  <article>
                                 <h1 class="text-center">ไฮไลท์ ฟุตบอล</h1>
                                 <p class="text-center"><b>จัดเต็มทุกคู่ ทุกนัด ไม่มีพลาด</b></p>
