@@ -127,9 +127,11 @@
                             </li>
                         </ul>
                     </li>
-                        <li ><a onclick="addplayer()" id="addplayer">เพิ่มนักเตะ</a></li>
-                        <li><a onclick="fixtures()" >โปรแกรมการแข่งขัน</a></li>
-                        <li><a ng-click="menu()" >เพิ่มโปรแกรมการแข่งขัน</a></li>
+                        <li><a onclick="addplayer()" id="addplayer">เพิ่มนักเตะ</a></li>
+
+                        <li><a onclick="fixtures()" id="fixtures">โปรแกรมการแข่งขัน</a></li>
+
+                        <li class="active"><a href="addfixtures.php"./">เพิ่มโปรแกรมการแข่งขัน</a></li>
                     </ul>
                 </div>
             </div>

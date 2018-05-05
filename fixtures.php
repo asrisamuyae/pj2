@@ -95,41 +95,43 @@
                         </div>
                     </div>
                     <figure class="logo-section">
-                        <h1><a href="index2.php"><img src="./assets/img/CG logo.png" width="200"></a></h1></figure>
+                        <h1><a href="index2.php"><img src="./assets/img/CG logo6.png" width="200"></a></h1></figure>
                     <a href="http://9lookjeab.com/hilight-goal" class="icon-bag visible-xs"><i class="fa fa-play" aria-hidden="true"></i></a>
                 </div>
                 <div class="col-sm-9 text-right">
                     <ul class="navbar">
                         <li class="active"><a href="index2.php">หน้าหลัก</a></li>
-                        <li class="dropdown nav-item">
+                      <li class="dropdown nav-item">
                         <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                              อคาเดมี่
                         </a>
                         <ul class="dropdown-menu dropdown-with-icons dropdown_menu">
-                            <li  >
+                            <li ng-click="academy('U-9')" >
                                 <!-- <i class="material-icons">content_paste</i> -->
                                 <span style="color: #333">U-9</span> 
                             </li>
-                            <li  >
+                            <li  ng-click="academy('U-11')">
                                  
                                 <!-- <i class="material-icons">content_paste</i> -->
                                 <span style="color: #333">U-11</span>
                             </li>
-                            <li  >
+                            <li  ng-click="academy('U-13')">
                                 <!-- <i class="material-icons">content_paste</i>  -->
                                 <span style="color: #333">U-13</span>
 
                             </li>
-                            <li >
+                            <li ng-click="academy('U-15')">
                                 <!-- <i class="material-icons">content_paste</i> -->
                                 <span style="color: #333">U-15</span>
 
                             </li>
                         </ul>
                     </li>
-                        <li><a ng-click="addplayer()" id="addplayer">เพิ่มนักเตะ</a></li>
-                        <li><a ng-click="menu()" >โปรแกรมการแข่งขัน</a></li>
-                        <li><a ng-click="menu()" >เพิ่มโปรแกรมการแข่งขัน</a></li>
+                        <li class="active"><a href="addplayer.php"./">เพิ่มนักเตะ</a></li>
+
+                        <li class="active"><a href="fixtures.php"./">โปรแกรมการแข่งขัน</a></li>
+
+                        <li class="active"><a href="addfixtures.php"./">เพิ่มโปรแกรมการแข่งขัน</a></li>
                     </ul>
                 </div>
             </div>
@@ -226,7 +228,7 @@
             <div class="card-content" style="">
             <div class="row">
                 <div class="form-group form-inline">
-                                                <label class="control-label col-md-2" id="label-addfixtures">Class</label>
+                                                <label class="control-label col-md-2" id="label-addfixtures">Academy</label>
                                                 <select class="form-control" id="position" ng-model="sendclass" ng-change="changeclassteam(sendclass)" data-ng-options="i as i.class for i in dataclass" style="    width: 155px">
                                                     <option value="">- none -</option>            
                                                     <!-- <option ng-value="i.position">{{i.position}}</option>             -->
@@ -243,7 +245,7 @@
                                             <table width="100%" >
                                                 <tr>
                                                     <td align="center" width="24">
-                                                        <img src="./images/imgteam/man-u.png" width="24px">
+                                                        
                                                     </td>
                                                     <td align="">
                                                         
@@ -258,19 +260,28 @@
                                     </tr>
                                 </table>
                             </td>
-                             <td >
-                                            <table width="100% ">
+
+                                <td style="border: solid 1px #E0E0E0;padding: 20px">
+                                <table width="100%">
+                                    <tr>
+                                        <td style="">
+                                            <table width="100%" >
                                                 <tr>
-                                                    <td align="center" ng-bind="item.dates"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" ng-bind="item.timed"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" ng-bind="item.class"></td>
+                                                    <td align="center" width="24">
+                                                        
+                                                    </td>
+                                                    
+                                                        <td>VS</td>
+                                                        
                                                 </tr>
                                             </table>
+                                        </td>
+                                       
+                                    </tr>
+                                </table>
                             </td>
+
+
                             <td style="border: solid 1px #E0E0E0;padding: 20px">
                                 <table width="100%">
                                     <tr>
@@ -278,7 +289,7 @@
                                             <table width="100%" >
                                                 <tr>
                                                     <td align="center" width="24">
-                                                        <img src="./images/imgteam/man-u.png" width="24px">
+                                                        
                                                     </td>
                                                     <td align="">
                                                         
@@ -292,6 +303,21 @@
                                     </tr>
                                 </table>
                             </td>
+
+                            <td >
+                                            <table width="100% ">
+                                                <tr>
+                                                    <td align="center" ng-bind="item.dates"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" ng-bind="item.timed"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" ng-bind="item.class"></td>
+                                                </tr>
+                                            </table>
+                            </td>
+
                         </tr>
                        
                        

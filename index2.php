@@ -128,35 +128,12 @@
                         </ul>
                     </li>
                         <li><a onclick="addplayer()" id="addplayer">เพิ่มนักเตะ</a></li>
-                        
-                        <li class="dropdown nav-item">
-                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                             โปรแกรมการแข่งขัน
-                        </a>
-                        <ul class="dropdown-menu dropdown-with-icons dropdown_menu">
-                            <li ng-click="academy('U-9')" >
-                                <!-- <i class="material-icons">content_paste</i> -->
-                                <span style="color: #333">U-9</span> 
-                            </li>
-                            <li  ng-click="academy('U-11')">
-                                 
-                                <!-- <i class="material-icons">content_paste</i> -->
-                                <span style="color: #333">U-11</span>
-                            </li>
-                            <li  ng-click="academy('U-13')">
-                                <!-- <i class="material-icons">content_paste</i>  -->
-                                <span style="color: #333">U-13</span>
 
-                            </li>
-                            <li ng-click="academy('U-15')">
-                                <!-- <i class="material-icons">content_paste</i> -->
-                                <span style="color: #333">U-15</span>
+                        <li><a onclick="fixtures()" id="fixtures">โปรแกรมการแข่งขัน</a></li>
 
-                            </li>
-                        </ul>
-                    </li>
+                        <li class="active"><a href="addfixtures.php"./">เพิ่มโปรแกรมการแข่งขัน</a></li>
 
-                        <li><a onclick="addfixtures()" id="addfixtures">เพิ่มโปรแกรมการแข่งขัน</a></li>
+                    
                     </ul>
                 </div>
             </div>
@@ -205,11 +182,11 @@
                 <div class="white-box" style="margin-bottom:10px;">
                     <div class="row">
                         <div class="col-sm-7">
-                            <article class="big-news" style="background-image: url('./assets/img/MU v LIV1.jpg')">
+                            <article class="big-news" style="background-image: url('./assets/img/BHA v MU.jpg')">
                                 <div class="overlay">
                                     <div class="plain-text">
-                                        <a href="http://www.siamsport.co.th/football/premierleague/view/58185" class="underline-none"><h1>แดงเดือดห้าดาว! แรชฟอร์ดเบิ้ล แมนยูเชือดลิเวอร์พูล2-1 ยึดที่2เหนียว</h1></a>
-                                        <p>สุดมัน! แรชฟอร์ดซัด2เม็ดให้ "ปีศาจแดง" นำ 2-0 ก่อนที่ครึ่งหลัง ตั้งเกมรับปล่อยให้ "หงส์แดง" บุกแหลกจนตีไข่แตกได้ สุดท้ายทีมของ มูรินโญ่ คว้าสามแต้มด้วยสกอร์ 2-1 ยึดที่สองแบบทำเอาแฟนผีหายใจไม่ทั่วท้อง หนีทีมของ คล็อปป์ ห้าแต้ม</p>
+                                        <a href="http://www.siamsport.co.th/football/other/view/67431" class="underline-none"><h1>ผีหงอย! ไบรท์ตันคึกจัดเชือดแมนยูในรอบ36ปี การันตีรอดตกชั้น</h1></a>
+                                        <p> "นกนางนวล" การันตีอยู่รอดในพรีเมียร์ลีกต่อไปแน่นอนแล้ว หลังเปิดบ้านไล่เฉือนเอาชนะ แมนเชสเตอร์ ยูไนเต็ด 1-0 จากประตูชัยของ ปาสกาล กรอสส์ ที่โขกบอลเลยเส้นไปแล้ว ซึ่งเป็นชัยชนะในรอบ 36 ปีเลยทีเดียว ในเกม ฟรายเดย์ไนท์ พรีเมียร์ลีก อังกฤษ เมื่อคืนวันศุกร์ที่ผ่านมา</p>
                                     </div>
                                 </div>
                             </article>
@@ -227,7 +204,7 @@
                                                         <li><a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i>
                                                                 954</a></li>
                                                         <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>
-                                                                3 วัน ที่แล้ว</a></li>
+                                                                1 วัน ที่แล้ว</a></li>
                                                     </ul>
                                                 </div>
                                             </li>
@@ -238,29 +215,29 @@
                                                         <li><a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i>
                                                                 559</a></li>
                                                         <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>
-                                                                4 วัน ที่แล้ว</a></li>
+                                                                1 วัน ที่แล้ว</a></li>
                                                     </ul>
                                                 </div>
                                             </li>
                                                                                     <li>
                                                 <div class="news-item">
-                                                    <a href="http://www.goal.com/th/%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7/%E0%B8%9C%E0%B8%A5%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%81%E0%B8%A9-%E0%B9%80%E0%B8%9B%E0%B8%9B%E0%B8%AB%E0%B8%99%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%AD-%E0%B8%9A%E0%B8%A3%E0%B8%AD%E0%B8%A2%E0%B8%99%E0%B8%8A%E0%B8%87%E0%B8%9A%E0%B8%A5%E0%B8%A5%E0%B8%87%E0%B8%94%E0%B8%AD%E0%B8%A3/yl5q419v6z1c1syuzu3b2bfk3" class="name">ผลงานประจักษ์! เป๊ปหนุน'เดอ บรอยน์'ชิงบัลลงดอร์</a>
+                                                    <a href="http://www.siamsport.co.th/football/europa-league/view/67424" class="name">ยูฟ่าแบนซิเมโอเน่4เกมชวดคุมแอตมาดริดชิงยูโรปา</a>
                                                     <ul class="tools">
                                                         <li><a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i>
                                                                 582</a></li>
                                                         <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>
-                                                                2 สัปดาห์ ที่แล้ว</a></li>
+                                                                2 วัน ที่แล้ว</a></li>
                                                     </ul>
                                                 </div>
                                             </li>
                                                                                     <li>
                                                 <div class="news-item">
-                                                    <a href="http://www.siamsport.co.th/football/premierleague/view/57431" class="name">เคนเร้าแข้งสเปอร์สใจต้องแกร่งดวลยูเวนตุส</a>
+                                                    <a href="http://www.siamsport.co.th/football/thaipremierleague/view/67331" class="name">"ดีโอโก้" ยิง 2 เม็ด - บุรีรัมย์ชนะเมืองทอง นำฝูงไทยลีกต่อ</a>
                                                     <ul class="tools">
                                                         <li><a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i>
                                                                 529</a></li>
                                                         <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>
-                                                                2 สัปดาห์ ที่แล้ว</a></li>
+                                                                2 วัน ที่แล้ว</a></li>
                                                     </ul>
                                                 </div>
                                             </li>
@@ -283,18 +260,18 @@
                     <div class="white-box">
                         <section class="inner-box news">
                             <article>
-                                                                    <div class="image-box" style="background-image: url('./assets/img/Eden Hazard.jpg')"></div>
+                                                                    <div class="image-box" style="background-image: url('./assets/img/Stevie G.jpg')"></div>
                                                                 <h4>
-                                    <a href="http://www.siamsport.co.th/football/premierleague/view/57474">ส่อชิ่ง!อาซาร์ปัดต่อสัญญาเชลซีหวังซบเรอัล มาดริด</a>
+                                    <a href="https://www.sanook.com/sport/698375/">เรียบร้อย! เรนเจอร์ส ประกาศตั้ง "เจอร์ราร์ด" คุมทัพเซ็นยาว 4 ปี</a>
                                 </h4>
-                                <p> สื่อแดนผู้ดีกระพือข่าว เอแด็น อาซาร์ ปีก เชลซี ไม่ยอมขยายสัญญาฉบับใหม่กับทีมเพื่อหวังให้ เรอัล มาดริด เข้ามาสนใจดึงตัวนักเตะไปร่วมทัพ เชื่อแข้งวัย 27 ปี พร้อมทำทุกวิถีทางเพื่อให้ได้โยกไปเล่นในรังซานติอาโก้ เบร์นาเบว</p>
+                                <p> กลาสโกว์ เรนเจอร์ส ทีมดังแห่งสก็อตติช พรีเมียร์ลีก ประกาศผ่านเว็บไซต์ของสโมสร แต่งตั้ง สตีเว่น เจอร์ราร์ด อดีตกองกลาง "หงส์แดง" ลิเวอร์พูล มาเป็นผู้จัดการทีมคนใหม่ด้วยสัญญาระยะยาว 4 ปีเป็นที่เรียบร้อยแล้ว</p>
                                 <div class="news-tool">
                                     <ul>
                                         <li>
                                             <a href="#"><i class="fa fa-search"></i> 467
                                             </a></li>
                                         <li>
-                                            <a href="#"><i class="fa fa-clock-o"></i> 1 เดือน ที่แล้ว
+                                            <a href="#"><i class="fa fa-clock-o"></i> 2 วัน ที่แล้ว
                                             </a></li>
                                     </ul>
                                 </div>
@@ -308,16 +285,16 @@
                             <article>
                                                                     <div class="image-box" style="background-image: url('./assets/img/Mo Salah.jpg')"></div>
                                                                 <h4>
-                                    <a href="http://www.siamsport.co.th/football/premierleague/view/57900">สตีวี่จีเชิดชูซาลาห์แข้งแอฟริกาเก่งสุดในลีก</a>
+                                    <a href="https://www.thairath.co.th/content/1271112">สื่อกระทิงปูด! 'ซาลาห์' สนย้ายซบราชันมากกว่าบาร์ซา เพราะเหตุผลเดียว</a>
                                 </h4>
-                                <p>สตีเว่น เจอร์ราร์ด ตำนาน ลิเวอร์พูล ยกย่อง โมฮาเหม็ด ซาลาห์ แข้งแดนมัมมี่ เป็นนักเตะแอฟริกาที่เก่งที่สุดในลีกสูงสุดเมืองผู้ดี ระบุฟอร์มของนักเตะสุดยอดเกินห้ามใจจริงๆ</p>
+                                <p>สื่อของสเปนประโคมข่าว โมฮาเหม็ด ซาลาห์ ปีกทีมลิเวอร์พูล สนใจย้ายซบทีมเรอัล มาดริด มากกว่าบาร์เซโลนา เพราะเหตุผลเดียวเท่านั้น</p>
                                 <div class="news-tool">
                                     <ul>
                                         <li>
                                             <a href="#"><i class="fa fa-search"></i> 524
                                             </a></li>
                                         <li>
-                                            <a href="#"><i class="fa fa-clock-o"></i> 1 เดือน ที่แล้ว
+                                            <a href="#"><i class="fa fa-clock-o"></i> 5 วัน ที่แล้ว
                                             </a></li>
                                     </ul>
                                 </div>
@@ -329,18 +306,18 @@
                     <div class="white-box">
                         <section class="inner-box news">
                             <article>
-                                                                    <div class="image-box" style="background-image: url('./assets/img/Neymar.jpg')"></div>
+                                                                    <div class="image-box" style="background-image: url('./assets/img/Ney Ca.jpg')"></div>
                                                                 <h4>
-                                    <a href="http://www.goal.com/th/%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7/official-%E0%B9%80%E0%B8%99%E0%B8%A2%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%9A%E0%B8%99%E0%B8%9C%E0%B8%B2%E0%B9%80%E0%B8%97%E0%B8%B2%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%8B%E0%B8%A5%E0%B8%8A%E0%B8%A7%E0%B8%94%E0%B8%89%E0%B8%B0%E0%B8%A1%E0%B8%B2%E0%B8%94%E0%B8%A3%E0%B8%94/8hfntq1q9l5211wcnr3v85mve">OFFICIAL: เนย์มาร์บินผ่าเท้าบราซิลชวดฉะมาดริด</a>
+                                    <a href="http://www.goal.com/th/%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7/%E0%B9%80%E0%B8%A5%E0%B8%81%E0%B8%9B%E0%B8%94-%E0%B9%80%E0%B8%99%E0%B8%A2%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%9A%E0%B9%81%E0%B8%95%E0%B8%81%E0%B8%84%E0%B8%AD%E0%B8%84%E0%B8%B2%E0%B8%A7%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%95%E0%B9%80%E0%B8%84%E0%B8%A5%E0%B8%A2%E0%B8%A3%E0%B9%83%E0%B8%88%E0%B9%81%E0%B8%A5%E0%B8%A7/162euwatxwsa21mc6xq2jrknmi">เลิกปิด! เนย์มาร์รับแตกคอคาวานีแต่เคลียร์ใจแล้ว</a>
                                 </h4>
-                                <p>ดาวยิงทีมชาติบราซิลจะพลาดเกมกับราชันชุดขาวแน่นอนแล้ว หลังเปแอสเชยืนยันว่านักเตะจะบินกลับไปผ่าตัดที่บ้านเกิด</p>
+                                <p>กองหน้าทีมชาติบราซิลยอมรับเป็นครั้งแรกว่ามีปัญหาผิดใจกับ เอดินสัน คาวานี แต่ทั้งคู่รีบเคลียร์ใจกันในเวลาอันรวดเร็ว</p>
                                 <div class="news-tool">
                                     <ul>
                                         <li>
                                             <a href="#"><i class="fa fa-search"></i> 494
                                             </a></li>
                                         <li>
-                                            <a href="#"><i class="fa fa-clock-o"></i> 1 เดือน ที่แล้ว
+                                            <a href="#"><i class="fa fa-clock-o"></i> 1 สัปดาห์ ที่แล้ว
                                             </a></li>
                                     </ul>
                                 </div>
