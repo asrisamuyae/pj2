@@ -223,6 +223,8 @@
                                                 <th>Phone</th>
                                                 <th>Sign Date</th>
                                                 <th>Release Date</th>
+                                                <th>Goal</th>
+                                                <th>Assist</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -240,6 +242,18 @@
                                                 <td><span ng-bind="item.sign_date"></span></td>
                                                 <td><span ng-bind="item.release_date"></span></td>
                                                 
+                                                <td><input class="form-control" type="text" ng-value="item.goal"  id="showinput{{item.id}}" style="display: none;">
+                                                <div ng-click="saveaddgoal(goalid)" ng-model="goalid" id="showsave{{item.id}}" style="display: none;    background: #4caf50;text-align: center; padding: 5px 15px; border-radius: 4px;margin-top: 10px;color: #fff">Save</div>
+                                                <button ng-click="changeincre(item)" ng-bind="item.goal" id="showedit{{item.id}}" >
+                                                </button>
+                                                </td>
+
+                                                 <td><input class="form-control" type="text" ng-value="item.assist"  id="showinputas{{item.id}}" style="display: none;">
+                                                <div ng-click="saveaddassist(assistid)" ng-model="assistid" id="showsaveas{{item.id}}" style="display: none;    background: #4caf50;text-align: center; padding: 5px 15px; border-radius: 4px;margin-top: 10px;color: #fff">Save</div>
+                                                <button ng-click="changeincreas(item)" ng-bind="item.assist" id="showeditas{{item.id}}" >
+                                                </button>
+                                                </td>
+
                                             </tr>
                                             
                                         </tbody>
@@ -296,6 +310,7 @@ app.controller('myCtrl', function($scope,$http,$location,$window ,$filter,$cooki
 
     $scope.test = "TEST";
     $scope.addgoal = false;
+    $scope.addassist = false;
     //alert('aaaaa')
     
      redyfucntion();
@@ -484,10 +499,81 @@ app.controller('myCtrl', function($scope,$http,$location,$window ,$filter,$cooki
                                         $scope.inputgoal = '';
                                     }
                                 });
-                            //$window.location.reload();
+                            $window.location.reload();
 
                      });
     }
+
+    $scope.changeincreas = function(item){
+        console.log(item)
+        console.log(item.id)
+        // $('#showinput'+item.id).css("display", "inline-block");
+        // $('#showsave'+item.id).css("display", "inline-block");
+
+        // $('#showedit'+item.id).css("display", "none");
+        $scope.assistid = item.id;
+        if ($scope.checkx == '' ) {
+            console.log('in case null')
+            
+
+            $('#showinputas'+item.id).css("display", "block");
+            $('#showsaveas'+item.id).css("display", "block");
+            $('#showeditas'+item.id).css("display", "none");
+            $scope.checkx = item.id;
+        }
+        else if (item.id != $scope.checkx) {
+            console.log('in case x==checkx')            
+            $('#showinputas'+$scope.checkx).css("display", "none");
+            $('#showsaveas'+$scope.checkx).css("display", "none");
+            $('#showeditas'+$scope.checkx).css("display", "block");
+
+            $('#showinputas'+item.id).css("display", "block");
+            $('#showsaveas'+item.id).css("display", "block");
+            $('#showeditas'+item.id).css("display", "none");
+            $scope.checkx = item.id;
+        }
+        else{
+            $('#showinputas'+item.id).css("display", "block");
+            $('#showsaveas'+item.id).css("display", "block");
+            $('#showeditas'+item.id).css("display", "none");
+            $scope.checkx = item.id;
+        }
+        //$scope.addgoal+ = true;
+    }
+
+    $scope.saveaddassist = function(x){
+
+        $('#showinputas'+x).css("display", "none");
+        $scope.inputassist = $('#showinputas'+x).val();
+
+        $('#showsaveas'+x).css("display", "none");
+
+        $('#showeditas'+x).css("display", "block");
+
+        //$scope.addgoal = false;
+        console.log(x)
+        console.log($scope.inputassist)
+
+        $http({
+                            method : 'POST',
+                            url : 'php/updateAssist.php',
+                            data: $.param({ 'id': x
+                                ,'assist': $scope.inputassist
+                            }),
+                            headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
+                    }).success(function(res){
+                            console.log(res);
+                             angular.forEach($scope.academyclass, function(data){
+                                    if (data.id == x) {
+                                        data.assist = $scope.inputassist;
+                                        $scope.inputassist = '';
+                                    }
+                                });
+                            $window.location.reload();
+
+                     });
+    }
+
     $scope.getacademy = function(x){
         $scope.academyclass = [];
         console.log(x);

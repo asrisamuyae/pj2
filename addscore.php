@@ -273,10 +273,11 @@
                                                     <td align="center" width="24">
                                                         
                                                     </td>
-                                                    
-                                                        <td><span ng-bind="item.score"></span></td>
 
-                                                        
+                                                        <td align="center" ng-bind="item.score"></td>
+                                                    
+                                                
+
                                                         
                                                 </tr>
                                             </table>
@@ -317,9 +318,9 @@
                                                 <tr>
                                                     <td align="center" ng-bind="item.timed"></td>
                                                 </tr>
-                                               <!--  <tr>
+                                                <tr>
                                                     <td align="center" ng-bind="item.class"></td>
-                                                </tr> -->
+                                                </tr>
                                             </table>
                             </td>
 
@@ -606,63 +607,31 @@ app.controller('myCtrl', function($scope,$http,$location,$window,$filter,$cookie
     //     $scope.team = x.class;
     //     console.log($scope.team)
     // }
-    $scope.saveaddfixtures = function(){
-       
-        var date =  $filter('date')(new Date($scope.date), 'yyyy-MM-dd');
-        // var sign_date =  $filter('date')(new Date($scope.sign_date), 'dd-MM-yyyy');
-        // var release_date =  $filter('date')(new Date($scope.release_date), 'dd-MM-yyyy');
-        // var birthday =  $filter('date')(new Date($scope.birthday), 'dd-MM-yyyy');
-        
-        //$scope.birthday = 
-        console.log(date)
-        console.log($scope.idaway)
-        console.log($scope.idclass)
-        
-        
-        console.log($scope.timed)
-        console.log($scope.home)
-        console.log($scope.away)
-       
-        var finalhome,finalaway;
-        if ($scope.txcheck == 'home') {
-            finalhome = $scope.idhome;
-            finalaway = $scope.idaway;
-        }
-        else {
-            finalhome = $scope.idaway;
-            finalaway = $scope.idhome;
-        }
-        
-        console.log(finalhome)
-        console.log(finalaway)
+    // $scope.savefixtures = function(){
 
-        $http({
-                            method : 'POST',
-                            url : 'php/addFixtures.php',
-                            data: $.param({ 'away': finalaway
-                                , 'home': finalhome
-                                , 'date': date
-                                , 'class': $scope.idclass
-                                , 'timed': $scope.timed
-                                , 'owner': $cookies.get("login")
-                            }),
-                            headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
-                    }).success(function(res){
-                            console.log(res);
-                            if (res == 1) {
-                                    $window.location.href = 'fixtures.php';
-                            }
-                            else{
-                                alert('err')
-                            }
-                        });
+    //     $http({
+    //                         method : 'POST',
+    //                         url : 'php/getScore.php',
+    //                         data: $.param({ 'score': $scope.score
+    //                             , 'owner': $cookies.get("login")
+    //                         }),
+    //                         headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
+    //                 }).success(function(res){
+    //                         console.log(res);
+    //                         if (res == 1) {
+    //                                 $window.location.href = 'fixtures.php';
+    //                         }
+    //                         else{
+    //                             alert('err')
+    //                         }
+    //                     });
                            
                             
 
 
 
 
-    }
+    // }
     // $scope.academyclass = [];
     // $scope.getacademy = function(x){
     //  $scope.academyclass = [];

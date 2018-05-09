@@ -271,24 +271,6 @@
                                             </div>
                                             
                                             </div> 
-                                        
-                                        
-                                            <!-- <div class="form-group form-inline">
-                                                <label class="control-label " id="label-addfixtures">Competition</label>
-                                                <input type="text" class="form-control" size="100" ng-model="competition">
-                                            </div>
-
-                                            <div class="form-group form-inline">
-                                                <label class="control-label " id="label-addfixtures" >League</label>
-                                                <input type="text" class="form-control" size="100" ng-model="league">
-                                            
-                                            </div>   
-
-                                            <div class="form-group form-inline">
-                                                <label class="control-label " id="label-addfixtures">Stadium</label>
-                                                <input type="text" class="form-control" size="100" ng-model="stadium">
-                                            </div>  -->                                    
-                                        
 
                                             <div class="form-group form-inline">
                                                 <label class="control-label col-md-2" id="label-addfixtures">Class</label>
